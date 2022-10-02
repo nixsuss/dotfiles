@@ -1,0 +1,13 @@
+[Default Applications]
+text/x-chdr=leafpad.desktop
+text/x-csrc=leafpad.desktop
+text/plain=leafpad.desktop
+audio/mpeg=vlc.desktop
+application/x-shellscript=leafpad.desktop
+
+[Added Associations]
+text/x-chdr=leafpad.desktop;
+text/x-csrc=leafpad.desktop;
+text/plain=leafpad.desktop;
+audio/mpeg=vlc.desktop;
+application/x-shellscript=leafpad.desktop;
