@@ -4,6 +4,7 @@
 static const char *upvol[] = { "volume", "up", NULL };
 static const char *downvol[] = { "volume", "down", NULL };
 static const char *mute[] = { "volume", "mute", NULL };
+// change the scrot's path to save screenshots to your specific path /home/$USER/what/ever/%Y-%m-%d-%T-screenshot.png
 static const char *screenshot[] = { "scrot","/home/ahmed/Pictures/screenshots/%Y-%m-%d-%T-screenshot.png", NULL };
 static const char *slock[] = { "slock", NULL };
 static const char *mpctoggle[] = { "mpc","toggle", NULL };
