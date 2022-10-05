@@ -119,4 +119,4 @@ alias yrm="yay -Rncs"
 alias yin="yay -S"
 alias ys="yay -Ss"
 alias yS="yay -Si"
-neofetch
+neofetch --ascii_distro arch_small

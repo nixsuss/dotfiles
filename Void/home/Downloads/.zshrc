@@ -117,4 +117,4 @@ alias xuz="sudo xbps-install -Su && omz update"
 alias poweroff="loginctl poweroff"
 alias reboot="loginctl reboot"
 alias xrmac="sudo rm -rf /var/cache/xbps/*"
-neofetch
+neofetch --ascii_distro void_small
