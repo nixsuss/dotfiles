@@ -1,2 +1,4 @@
 media-video/pipewire sound-server
 media-sound/pulseaudio -daemon
+media-sound/mpd pulseaudio
+media-sound/ncmpcpp visualizer
