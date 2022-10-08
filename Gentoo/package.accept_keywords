@@ -1,0 +1,5 @@
+x11-misc/pcmanfm ~amd64
+dev-qt/qtstyleplugins ~amd64
+x11-themes/kvantum ~amd64
+media-gfx/ueberzug ~amd64
+x11-libs/libfm ~amd64
