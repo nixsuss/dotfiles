@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e
+sudo mkdir -p /etc/portage/repos.conf/
+echo "[librewolf]
+priority = 50
+location = /var/db/repos/librewolf
+sync-type = git
+sync-uri = https://gitlab.com/librewolf-community/browser/gentoo.git
+auto-sync = Yes" | sudo tee -a /etc/portage/repos.conf/librewolf.conf
+sudo emaint -r librewolf sync

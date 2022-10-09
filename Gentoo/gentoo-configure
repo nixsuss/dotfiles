@@ -14,3 +14,4 @@ sudo chmod 777 /etc/cron.weekly/fstrim
 #sudo mv Fonts/* /usr/share/fonts/
 sudo fc-cache -rv
 fc-cache -rv
+mkdir -p .cache/mpd
