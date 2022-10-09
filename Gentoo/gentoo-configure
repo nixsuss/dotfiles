@@ -9,7 +9,8 @@ sudo rc-update add elogind boot
 sudo rc-update add ufw default
 echo "#!/bin/bash
 fstrim /" | sudo tee -a /etc/cron.weekly/fstrim
-echo "set number" | sudo tee /etc/vim/vimrc
+echo "set showcmd
+set number" | sudo tee /etc/vim/vimrc.local
 sudo chmod 777 /etc/cron.weekly/fstrim
 #sudo mv Fonts/* /usr/share/fonts/
 sudo fc-cache -rv
