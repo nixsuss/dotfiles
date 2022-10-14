@@ -127,6 +127,9 @@ source $ZSH/oh-my-zsh.sh
  alias emodule-rebuildv="sudo emerge -av @module-rebuild"
  alias epmodule-rebuild="sudo emerge -p @module-rebuild"
  alias epmodule-rebuild="sudo emerge -pv @module-rebuild"
+ alias elist="eix-installed -a"
+ alias eixsyncv="sudo eix-sync -av"
+ alias eixsync="sudo eix-sync -aq"
  alias poweroff="loginctl poweroff"
  alias reboot="loginctl reboot"
  neofetch
