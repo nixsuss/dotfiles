@@ -1,4 +1,4 @@
-URxvt.font: xft:Comic Mono:size=14:style:Normal
+URxvt.font: xft:Cascadia Code PL:size=14:SemiBold:Italic
 URxvt.perl-ext-common: default,resize-font
 URxvt.antialias: true
 URxvt.rgba: rgb

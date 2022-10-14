@@ -19,8 +19,7 @@ sudo ln -sv /usr/share/fontconfig/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.
 sudo mkdir /etc/pipewire
 sudo cp -i /usr/share/pipewire/pipewire.conf /etc/pipewire/
 sudo cp -i /usr/share/pipewire/pipewire-pulse.conf /etc/pipewire/
-sudo mv -i ComicMono-Bold.ttf /usr/share/fonts/TTF/
-sudo mv -i ComicMono.ttf /usr/share/fonts/TTF/
+sudo mv -i Fonts/* /usr/share/fonts/
 sudo mv -i .local/bin/librewolf /usr/bin/
 mkdir -p Pictures/screenshots
 mkdir -p .cache/mpd
