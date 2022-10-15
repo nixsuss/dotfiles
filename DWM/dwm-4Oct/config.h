@@ -49,6 +49,7 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Firefox", NULL,     NULL,           1 << 8,    0,          -1 },
+	{ "firefox", NULL,     NULL,           1 << 8,    0,          -1 },
 	{ "librewolf", NULL,     NULL,           1 << 8,    0,        -1 },
 	{ "URxvt",   NULL,     NULL,           0,         0,          -1 },
 	{ "mpv",     NULL,     NULL,           0,         1,          -1 },
@@ -75,6 +76,8 @@ static const Rule rules[] = {
 	{ "Audacious",     NULL,     NULL,           0,         1,     -1 },
 	{ NULL,      NULL,     "Event Tester", 0,         0,           -1 }, /* xev */
 	{ "Firefox", "Toolkit", "Picture-in-Picture", 0,          1,   -1 },
+	{ "firefox", "Toolkit", "Picture-in-Picture", 0,          1,   -1 },
+	{ "librewolf", "Toolkit", "Picture-in-Picture", 0,        1,   -1 },
 };
 
 /* layout(s) */
