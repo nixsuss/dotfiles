@@ -11,8 +11,8 @@ static const char *mpctoggle[] = { "mpc","toggle", NULL };
 static const char *mpcnext[] = { "mpc","next", NULL };
 static const char *mpcprev[] = { "mpc","prev", NULL };
 static const char *mpcstop[] = { "mpc","stop", NULL };
-static const char *ncmpcpp[] = { "urxvtc","-e","ncmpcpp", NULL };
-static const char *ranger[] = { "urxvtc","-e","ranger", NULL };
+static const char *ncmpcpp[] = { "alacritty","-e","ncmpcpp", NULL };
+static const char *ranger[] = { "alacritty","-e","ranger", NULL };
 static const char *rofi[] = { "rofi","-show", NULL };
 static const char *powermenu[] = { "powermenu", NULL };
 static const char *clipmenu[] = { "clipmenu","-i","-fn","Cascadia Code PL:size=14:SemiBold:Italic:antialias=true:hinting=true","-nb","#000000","-nf","#ffffff","-sb","#808080","-sf","#000000", NULL };
@@ -121,7 +121,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-static const char *termcmd[]  = { "urxvtc", NULL };
+static const char *termcmd[]  = { "alacritty", NULL };
 
 #include "movestack.c"
 static const Key keys[] = {

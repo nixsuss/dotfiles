@@ -1,0 +1,49 @@
+window:
+  padding:
+    x: 5
+    y: 5
+  class:
+    instance: Alacritty
+    general: Alacritty
+  opacity: 0.95
+
+scrolling:
+  history: 10000
+  multiplier: 5
+
+
+font:
+  normal:
+    family: Comic Mono
+    style:  Normal
+  bold:
+    family: Comic Mono
+    style:  Bold
+  size: 14
+draw_bold_text_with_bright_colors: true
+
+colors:
+  primary:
+    background: "#1D1F21"
+    foreground: "#C5C8C6"
+  normal:
+    black: "#282A2E"
+    red: "#A54242"
+    green: "#8C9440"
+    yellow: "#DE935F"
+    blue: "#5F819D"
+    magenta: "#85678F"
+    cyan: "#5E8D87"
+    white: "#707880"
+  bright:
+    black: "#373B41"
+    red: "#CC6666"
+    green: "#B5BD68"
+    yellow: "#F0C674"
+    blue: "#81A2BE"
+    magenta: "#B294BB"
+    cyan: "#8ABEB7"
+    white: "#C5C8C6"
+
+selection:
+  save_to_clipboard: false

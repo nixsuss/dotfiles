@@ -137,4 +137,5 @@ source $ZSH/oh-my-zsh.sh
  alias eixsyncz="sudo eix-sync -aq && omz update"
  alias poweroff="loginctl poweroff"
  alias reboot="loginctl reboot"
+ alias ls="lsd"
  neofetch
