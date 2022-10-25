@@ -121,4 +121,5 @@ alias yin="yay -S"
 alias ys="yay -Ss"
 alias yS="yay -Si"
 alias ls="lsd"
+alias du="dust"
 neofetch --ascii_distro arch_small

@@ -138,4 +138,5 @@ source $ZSH/oh-my-zsh.sh
  alias poweroff="loginctl poweroff"
  alias reboot="loginctl reboot"
  alias ls="lsd"
+ alias du="dust"
  neofetch
