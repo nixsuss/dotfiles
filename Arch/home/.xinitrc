@@ -10,4 +10,5 @@ xss-lock slock &
 dunst &
 clipmenud &
 numlockx
+redshift &
 exec dwm
