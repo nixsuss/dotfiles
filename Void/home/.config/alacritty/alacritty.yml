@@ -5,7 +5,7 @@ window:
   class:
     instance: Alacritty
     general: Alacritty
-  opacity: 0.95
+  opacity: 0.75
 
 scrolling:
   history: 10000
@@ -22,28 +22,37 @@ font:
   size: 14
 draw_bold_text_with_bright_colors: true
 
+# Colors (Hyper)
 colors:
+  # Default colors
   primary:
-    background: "#1D1F21"
-    foreground: "#C5C8C6"
+    background: '0x000000'
+    foreground: '0xffffff'
+  cursor:
+    text: '0xF81CE5'
+    cursor: '0xffffff'
+
+  # Normal colors
   normal:
-    black: "#282A2E"
-    red: "#A54242"
-    green: "#8C9440"
-    yellow: "#DE935F"
-    blue: "#5F819D"
-    magenta: "#85678F"
-    cyan: "#5E8D87"
-    white: "#707880"
+    black:   '0x000000'
+    red:     '0xfe0100'
+    green:   '0x33ff00'
+    yellow:  '0xfeff00'
+    blue:    '0x0066ff'
+    magenta: '0xcc00ff'
+    cyan:    '0x00ffff'
+    white:   '0xd0d0d0'
+
+  # Bright colors
   bright:
-    black: "#373B41"
-    red: "#CC6666"
-    green: "#B5BD68"
-    yellow: "#F0C674"
-    blue: "#81A2BE"
-    magenta: "#B294BB"
-    cyan: "#8ABEB7"
-    white: "#C5C8C6"
+    black:   '0x808080'
+    red:     '0xfe0100'
+    green:   '0x33ff00'
+    yellow:  '0xfeff00'
+    blue:    '0x0066ff'
+    magenta: '0xcc00ff'
+    cyan:    '0x00ffff'
+    white:   '0xFFFFFF'
 
 selection:
   save_to_clipboard: false
