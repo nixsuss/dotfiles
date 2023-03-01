@@ -3,3 +3,4 @@ media-sound/pulseaudio -daemon
 media-sound/mpd pulseaudio
 media-sound/ncmpcpp visualizer
 x11-terms/rxvt-unicode fading-colors 256-color
+sys-boot/grub mount
