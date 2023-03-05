@@ -1,5 +1,5 @@
 #!/bin/bash
 set -eu
-sudo emerge -aq -autounmask-continue app-emulation/qemu app-emulation/libvirt app-emulation/virt-manager virt-viewer bridge-utils openbsd-netcat
+sudo emerge -q --autounmask-continue app-emulation/qemu app-emulation/libvirt app-emulation/virt-manager virt-viewer bridge-utils openbsd-netcat
 sudo rc-update add libvirtd default
-sudo usermod -a -G libvirt kvm $USER
+sudo usermod -a -G libvirt,kvm $USER
