@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set -eu
 sudo mkdir /etc/pipewire
 sudo cp -i /usr/share/pipewire/pipewire.conf /etc/pipewire/
 sudo cp -i /usr/share/pipewire/pipewire-pulse.conf /etc/pipewire/

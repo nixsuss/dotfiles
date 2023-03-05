@@ -8,6 +8,7 @@ dev-libs/nss ~amd64
 x11-misc/picom ~amd64
 sys-apps/dust ~amd64
 app-emulation/wine-vanilla ~amd64
-app-office/libreoffice **
-app-office/libreoffice-l10n **
+app-office/libreoffice-bin ~amd64 
+app-office/libreoffice ~amd64 
+app-office/libreoffice-l10n ~amd64
 x11-themes/breeze-hacked-cursor-theme **
