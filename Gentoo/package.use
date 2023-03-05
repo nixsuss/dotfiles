@@ -4,10 +4,11 @@ media-sound/mpd pulseaudio
 media-sound/ncmpcpp visualizer
 x11-terms/rxvt-unicode fading-colors 256-color xft
 sys-boot/grub mount
-media-libs/libsdl2 haptic
 app-emulation/libvirt pcap virt-network numa qemu
 app-emulation/virt-viewer libvirt spice
 app-emulation/qemu spice vde usbredir
 net-misc/vde pcap
 net-misc/spice-gtk usbredir
 net-dns/dnsmasq ipv6 script
+media-libs/libsdl2 haptic
+media-libs/imgui vulkan

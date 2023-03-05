@@ -11,4 +11,8 @@ app-emulation/wine-vanilla ~amd64
 app-office/libreoffice-bin ~amd64 
 app-office/libreoffice ~amd64 
 app-office/libreoffice-l10n ~amd64
+games-util/gamemode ~amd64
+games-util/lutris ~amd64
+media-libs/imgui ~amd64
+games-util/mangohud ~amd64
 x11-themes/breeze-hacked-cursor-theme **

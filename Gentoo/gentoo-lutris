@@ -1,0 +1,3 @@
+#!/bin/bash
+set -eu
+sudo emerge -q --autounmask-continue virtual/wine games-util/lutris games-util/gamemode games-util/mangohud
