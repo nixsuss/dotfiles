@@ -9,7 +9,7 @@ export EDITOR="vim"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="norm"
+ZSH_THEME="duellj"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -120,6 +120,7 @@ source $ZSH/oh-my-zsh.sh
  alias erm="sudo emerge --deselect"
  alias eprm="sudo emerge --deselect -p"
  alias ec="sudo eclean-dist -d"
+ alias eallc="sudo rm -rf /var/cache/distfiles/*"
  alias epc="sudo eclean-dist -dp"
  alias esync="sudo emerge -aq --sync"
  alias esyncz="sudo emerge -aq --sync && omz update"
