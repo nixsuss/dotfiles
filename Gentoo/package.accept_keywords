@@ -15,4 +15,5 @@ games-util/gamemode ~amd64
 games-util/lutris ~amd64
 media-libs/imgui ~amd64
 games-util/mangohud ~amd64
+media-video/obs-studio ~amd64
 x11-themes/breeze-hacked-cursor-theme **
