@@ -12,7 +12,7 @@ genkernel --microcode-initramfs all
 
 * Install Grub and some packages.
 
-emerge -aq sys-boot/grub os-prober neofetch
+emerge -aq sys-boot/grub os-prober neofetch app-admin/sudo
 
 * Make sure you set GRUB_GFXPAYLOAD_LINUX="keep" in /etc/defaut/grub
 
