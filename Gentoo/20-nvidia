@@ -1,0 +1,14 @@
+#!/bin/sh
+# put this script in /lib64/elogind/system-sleep/ and run sudo chmod 777 /lib64/elogind/system-sleep/20-nvidia
+case "${1-}" in
+    'pre')
+        /usr/bin/nvidia-sleep.sh suspend
+        ;;
+    'post')
+        /usr/bin/nvidia-sleep.sh resume &
+        ;;
+    *)
+        exit 1
+        ;;
+esac
+
