@@ -17,4 +17,13 @@ media-libs/imgui ~amd64
 games-util/mangohud ~amd64
 media-video/obs-studio ~amd64
 media-video/shotcut ~amd64
+gui-wm/hyprland ~amd64
+gui-apps/waybar ~amd64
+dev-libs/date ~amd64
+gui-apps/swaylock-effects ~amd64
+gui-apps/wlogout ~amd64
+sys-kernel/gentoo-sources ~amd64
+x11-drivers/nvidia-drivers ~amd64
+sys-kernel/linux-firmware ~amd64
+sys-boot/grub ~amd64
 x11-themes/breeze-hacked-cursor-theme **

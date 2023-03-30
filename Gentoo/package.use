@@ -16,3 +16,7 @@ media-video/obs-studio lua pulseaudio speex v4l
 media-video/mpv lua
 media-libs/mlt ffmpeg frei0r
 media-libs/opencv contribdnn contrib
+x11-drivers/nvidia-drivers wayland
+sys-boot/grub fonts
+media-libs/mesa wayland
+x11-libs/gtk+ wayland
