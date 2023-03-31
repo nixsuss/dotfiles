@@ -20,3 +20,4 @@ x11-drivers/nvidia-drivers wayland
 sys-boot/grub fonts
 media-libs/mesa wayland
 x11-libs/gtk+ wayland
+media-libs/freetype harfbuzz

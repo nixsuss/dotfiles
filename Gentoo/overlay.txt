@@ -1,2 +1,4 @@
 # dust
 sudo eselect repository enable guru
+#wayland packages
+sudo eselect repository enable wayland-desktop
