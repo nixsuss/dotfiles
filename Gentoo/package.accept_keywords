@@ -27,4 +27,5 @@ x11-drivers/nvidia-drivers ~amd64
 sys-kernel/linux-firmware ~amd64
 sys-boot/grub ~amd64
 sys-kernel/linux-headers ~amd64
+gui-apps/wofi ~amd64
 x11-themes/breeze-hacked-cursor-theme **
