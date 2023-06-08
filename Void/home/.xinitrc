@@ -11,4 +11,5 @@ dunst &
 clipmenud &
 numlockx
 redshift &
+conky -c .config/conkyrc &
 exec dbus-run-session dwm
