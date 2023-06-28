@@ -52,7 +52,7 @@ alignment middle_right
 use_xft yes
 # Requires mono font for spacing reasons
 # xftfont Liberation Mono:bold:size=9
-xftfont Noto Sans:size=12:style=Medium
+xftfont DejaVu Sans:size=12:style=Condensed
 
 # Alpha of Xft font. Must be a value at or between 1 and 0 ###
 xftalpha 1

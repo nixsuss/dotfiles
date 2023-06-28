@@ -15,12 +15,12 @@ static const char *nextplay[] = { "playerctl","next", NULL };
 static const char *prevplay[] = { "playerctl","previous", NULL };
 static const char *toggleplay[] = { "playerctl","play-pause", NULL };
 static const char *stopplay[] = { "playerctl","stop", NULL };
-static const char *ncmpcpp[] = { "alacritty","-e","ncmpcpp", NULL };
-static const char *ranger[] = { "alacritty","-e","ranger", NULL };
+static const char *ncmpcpp[] = { "kitty","ncmpcpp", NULL };
+static const char *ranger[] = { "kitty","-e","ranger", NULL };
 static const char *rofi[] = { "rofi","-show", NULL };
 static const char *powermenu[] = { "powermenu", NULL };
 static const char *filemanager[] = { "pcmanfm", NULL };
-static const char *clipmenu[] = { "clipmenu","-i","-fn","Cascadia Code PL:size=14:SemiBold:Italic:antialias=true:hinting=true","-nb","#000000","-nf","#ffffff","-sb","#808080","-sf","#000000", NULL };
+static const char *clipmenu[] = { "clipmenu","-i","-fn","DejaVu Sans:size=14:Condensed:antialias=true:hinting=true","-nb","#000000","-nf","#ffffff","-sb","#808080","-sf","#000000", NULL };
 static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int gappih    = 10;       /* horiz inner gap between windows */
@@ -32,7 +32,7 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const int focusonwheel       = 0;
 static const char *fonts[]          = { "JetBrainsMonoNL Nerd Font:size=12:style=Bold:antialias=true:hinting=true", "Overpass Nerd Font:size=12:antialias=true" };
-static const char dmenufont[]       = "Cascadia Code PL:size=14:SemiBold:Italic:antialias=true:hinting=true";
+static const char dmenufont[]       = "DejaVu Sans:size=14:Condensed:Italic:antialias=true:hinting=true";
 static const char col_gray1[]       = "#101010";
 static const char col_gray2[]       = "#101010";
 static const char col_gray3[]       = "#ffffff";
@@ -127,7 +127,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-static const char *termcmd[]  = { "alacritty", NULL };
+static const char *termcmd[]  = { "kitty", NULL };
 
 #include "movestack.c"
 static const Key keys[] = {

@@ -2,7 +2,7 @@ configuration {
   display-drun: "Applications:";
   display-window: "Windows:";
   drun-display-format: "{icon} {name}";
-  font: "Cascadia Code PL SemiBold Italic 16";
+  font: "DejaVu Sans Condensed 16";
   modi: "drun";
   show-icons: true;
   icon-theme: "Papirus";
