@@ -52,7 +52,7 @@ alignment middle_right
 use_xft yes
 # Requires mono font for spacing reasons
 # xftfont Liberation Mono:bold:size=9
-xftfont DejaVu Sans:size=12:style=Condensed
+xftfont JetBrainsMonoNL Nerd Font:size=12:style=Bold
 
 # Alpha of Xft font. Must be a value at or between 1 and 0 ###
 xftalpha 1
@@ -175,18 +175,18 @@ update_interval 1
 TEXT
 #${font Good Times:size=72}$alignr${color3}${time %H}${color1}:${time %M}${font}${color3}
 
-${font Noto Sans:32:style=Medium}$alignc${color1}${time %A},${color3} ${time %d}${color0} ${time %B} ${time %Y}${font}
-${font Noto Sans:size=72:style=Medium}$alignr${color3}${time %H}${color1}:${time %M}${font}${color3}
+${font DejaVu Sans:32:style=Condensed Bold}$alignc${color1}${time %A},${color3} ${time %d}${color0} ${time %B} ${time %Y}${font}
+${font DejaVu Sans:size=72:style=Condensed Bold}$alignr${color3}${time %H}${color1}:${time %M}${font}${color3}
 ${color1}${hr}
-${font Noto Sans:size=12:style=Medium}${alignr}${color3}Machine: ${color1}$nodename${color3} ${color4}|${color3}${color1}${color3} Uptime: ${color1}$uptime${color3}
-${font Noto Sans:size=12:style=Medium}${alignr} Arch.: ${color1}${machine}${color3} ${color4}|${color3} Kernel: ${color1}${kernel}${color3}
-${font Noto Sans:size=12:style=Medium}${alignr} Root: ${color1}${fs_used /}${color3} / ${color1}${fs_size /}${color3} ${color4}|${color3} Used: ${color1}${fs_used_perc}%${color3}
+${font DejaVu Sans:size=12:style=Condensed Bold}${alignr}${color3}Machine: ${color1}$nodename${color3} ${color4}|${color3}${color1}${color3} Uptime: ${color1}$uptime${color3}
+${font DejaVu Sans:size=12:style=Condensed Bold}${alignr} Arch.: ${color1}${machine}${color3} ${color4}|${color3} Kernel: ${color1}${kernel}${color3}
+${font DejaVu Sans:size=12:style=Condensed Bold}${alignr} Root: ${color1}${fs_used /}${color3} / ${color1}${fs_size /}${color3} ${color4}|${color3} Used: ${color1}${fs_used_perc}%${color3}
 #${alignr}${color3}Dropbox Used: ${color1}${fs_used /run/media/mark/Dropbox}${color3} of ${color1}${fs_size /run/media/mark/Dropbox}${color3} / ${color1}${fs_used_perc /run/media/mark/Dropbox}%${color3}
 ${alignr} ${color3} RAM: ${color1}$mem / $memmax${color3} ${color4}${color3} #Swap: ${color1}${swap} / ${swapmax}${color3}
 #${alignr} ${color3}Battery: ${color1}${battery BAT0}${color3} ${color4}|${color3} Temp: ${color1}${hwmon 4 temp 1}°C${color3}${color4} |${color3} Fan: ${color1}${hwmon 5 fan 1} RPM${color3}
 
 ${color1}${hr 1}
-${alignc}${color1}${font Noto Sans:12:style=Medium}CPU Usage${color3}${font}
+${alignc}${color1}${font DejaVu Sans:12:style=Condensed Bold}CPU Usage${color3}${font}
 ${alignr} ${color1} CPU Use: ${cpu cpu0} % of Available
 ${alignr} ${color3} Core-0: ${color3}${cpugraph 0 10,120 000000 0BFF00 -l}
 ${alignr} ${color3} Core-1: ${color3}${cpugraph 1 10,120 000000 0BFF00 -l}
@@ -196,10 +196,10 @@ ${alignr} ${color3} Core-5: ${color3}${cpugraph 3 10,120 000000 0BFF00 -l}
 ${alignr} ${color3} Core-6: ${color3}${cpugraph 3 10,120 000000 0BFF00 -l}
 ${alignr} ${color3} Core-7: ${color3}${cpugraph 3 10,120 000000 0BFF00 -l}
 ${color1}${hr 1}
-${alignc}${color1}${font Noto Sans:15:style=Medium}Net (${addr enp3s0})${font}
+${alignc}${color1}${font DejaVu Sans:15:style=Condensed Bold}Net (${addr enp3s0})${font}
    Down:${color3} ${downspeedf enp3s0}kB/s ${alignr}${color1}Up:${color3} ${upspeedf enp3s0}kB/s
    ${downspeedgraph enp3s0 30,120 000000 0BFF00} $alignr${upspeedgraph enp3s0 30,120 000000 0BFF00}   
 ${color1}${hr 1}
-${voffset 12}${alignc}${color1}${color1}${font Noto Sans:12:style=Medium}Desktop: ${execi 86400 env | grep '^DESKTOP_SESSION' | cut -d'=' -f2-}${color3}
-${alignc}${font Noto Sans:size=12:style=Medium}${color1} ${exec lsb_release -ds} ${color3}
-${alignc}${color3}${font Noto Sans:size=10:style=Medium}User: ${color1}${execi 86400 whoami}
+${voffset 12}${alignc}${color1}${color1}${font DejaVu Sans:12:style=Condensed Bold}Desktop: ${execi 86400 env | grep '^DESKTOP_SESSION' | cut -d'=' -f2-}${color3}
+${alignc}${font DejaVu Sans:size=12:style=Condensed Bold}${color1} ${exec lsb_release -ds} ${color3}
+${alignc}${color3}${font DejaVu Sans:size=10:style=Condensed Bold}User: ${color1}${execi 86400 whoami}
