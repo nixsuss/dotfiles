@@ -31,7 +31,7 @@ static       int smartgaps          = 0;        /* 1 means no outer gap when the
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const int focusonwheel       = 0;
-static const char *fonts[]          = { "JetBrainsMonoNL Nerd Font:size=12:style=Bold:antialias=true:hinting=true", "Overpass Nerd Font:size=12:antialias=true" };
+static const char *fonts[]          = { "JetBrainsMonoNL Nerd Font:size=12:style=Bold:antialias=true:hinting=true", "Overpass Nerd Font:size=12:antialias=true","Noto Color Emoji:size=12:antialias=true" };
 static const char dmenufont[]       = "DejaVu Sans:size=14:style=Condensed Bold:antialias=true:hinting=true";
 static const char col_gray1[]       = "#101010";
 static const char col_gray2[]       = "#101010";
