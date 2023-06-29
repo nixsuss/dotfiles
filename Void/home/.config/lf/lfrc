@@ -5,8 +5,28 @@ set cleaner ~/.config/lf/lf_kitty_clean
 #set hidden true
 set ignorecase true
 set icons true
+#set drawbox true
 
 # Custom Functions
+cmd open ${{
+    case $(file --mime-type "$f" -bL) in
+        text/*|application/json) $EDITOR "$f";;
+        *) xdg-open "$f" ;;
+    esac
+}}
+
+cmd chmod ${{
+  printf "Mode Bits: "
+  read ans
+
+  for file in "$fx"
+  do
+    chmod $ans $file
+  done
+
+  lf -remote 'send reload'
+}}
+
 cmd mkdir ${{
   printf "Directory Name: "
   read ans
@@ -52,6 +72,7 @@ cmd restore_trash ${{
 # Bindings
 map d
 map m
+map c
 map au unarchive
 
 # Basic Functions
@@ -65,6 +86,7 @@ map <enter> open
 map R reload
 map mf mkfile
 map md mkdir
+map ch chmod
 map C clear
 
 # Movement
