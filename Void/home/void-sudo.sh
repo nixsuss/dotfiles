@@ -13,7 +13,7 @@ echo "set number" | sudo tee -a /etc/vimrc.local
 sudo ln -sv /etc/sv/{elogind,dbus,polkitd,ntpd,ufw,socklog-unix,nanoklogd,NetworkManager,tor} /var/service/
 sudo sed -i 's/GRUB_CMDLINE_LINUX_DEFAULT="loglevel=4/GRUB_CMDLINE_LINUX_DEFAULT="loglevel=4 mitigations=off/' /etc/default/grub
 sudo grub-mkconfig -o /boot/grub/grub.cfg
-sudo sed -i 's/#FONT=/FONT="ter-d28b"/' /etc/rc.conf
+sudo sed -i 's/#FONT="lat9w-16"/FONT="ter-d28b"/' /etc/rc.conf
 sudo ufw enable
 sudo mkdir -p /etc/alsa/conf.d
 sudo ln -sv /usr/share/alsa/alsa.conf.d/* /etc/alsa/conf.d/
