@@ -80,6 +80,7 @@ static const Rule rules[] = {
 	{ "obs",     NULL,     NULL,           0,         1,          -1 },
 	{ "Audacious",     NULL,     NULL,           0,         1,     -1 },
 	{ "Nsxiv",     NULL,     NULL,           0,         1,     -1 },
+	{ "Zathura",     NULL,     NULL,           0,         1,     -1 },	
 	{ NULL,      NULL,     "Event Tester", 0,         0,           -1 }, /* xev */
 	{ "Firefox", "Toolkit", "Picture-in-Picture", 0,          1,   -1 },
 	{ "firefox", "Toolkit", "Picture-in-Picture", 0,          1,   -1 },
