@@ -120,4 +120,5 @@ alias reboot="loginctl reboot"
 alias xrmac="sudo rm -rf /var/cache/xbps/*"
 alias ls="lsd"
 alias du="dust"
-figlet -c -f Doom "YES MASTER ?" | lolcat
+#figlet -c -f Doom "YES MASTER ?" | lolcat
+pfetch
