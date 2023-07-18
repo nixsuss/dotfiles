@@ -6,6 +6,7 @@ exec /usr/libexec/polkit-gnome-authentication-agent-1 &
 #urxvtd -q -o -f &
 picom -b &
 pipewire &
+pipewire-pulse &
 xss-lock slock &
 dunst &
 clipmenud &

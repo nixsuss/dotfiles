@@ -6,6 +6,7 @@ nitrogen --restore &
 #urxvtd -q -o -f &
 picom -b &
 pipewire &
+pipewire-pulse &
 xss-lock slock &
 dunst &
 clipmenud &
