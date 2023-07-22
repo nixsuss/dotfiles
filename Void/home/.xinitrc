@@ -11,6 +11,6 @@ xss-lock slock &
 dunst &
 clipmenud &
 numlockx
-redshift &
-conky -c .config/conkyrc &
+#redshift &
+#conky -c .config/conkyrc &
 exec dbus-run-session dwm

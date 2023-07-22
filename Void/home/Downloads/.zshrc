@@ -120,6 +120,7 @@ alias reboot="loginctl reboot"
 alias xrmac="sudo rm -rf /var/cache/xbps/*"
 alias ls="lsd"
 alias du="dust"
+alias wttr="curl 'https://wttr.in/Port_Said?0' --silent --max-time 3"
 pfetch
 #neofetch --ascii_distro void_small
 #curl 'https://wttr.in/Port_Said?0' --silent --max-time 3
