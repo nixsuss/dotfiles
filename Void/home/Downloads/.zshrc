@@ -120,5 +120,6 @@ alias reboot="loginctl reboot"
 alias xrmac="sudo rm -rf /var/cache/xbps/*"
 alias ls="lsd"
 alias du="dust"
-#figlet -c -f Doom "YES MASTER ?" | lolcat
 pfetch
+#neofetch --ascii_distro void_small
+#curl 'https://wttr.in/Port_Said?0' --silent --max-time 3
