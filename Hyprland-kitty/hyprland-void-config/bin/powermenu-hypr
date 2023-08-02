@@ -1,0 +1,16 @@
+#!/bin/bash
+
+entries="⏻ Shutdown\n⭮ Reboot\n⏾ Suspend\n Lock"
+
+selected=$(echo -e $entries|wofi --width 450 --height 150 --dmenu --cache-file /dev/null | awk '{print tolower($2)}')
+
+case $selected in
+  shutdown)
+    exec loginctl poweroff;;
+   reboot)
+    exec loginctl reboot;;
+ suspend)
+    exec loginctl suspend;;
+  lock)
+    exec swaylock -f -i ~/Pictures/Wallpapers/wallhaven-o3kzqp.png;;
+esac
