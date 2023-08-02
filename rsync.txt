@@ -1,0 +1,2 @@
+sudo rsync -aAXvn --delete --exclude={/dev/*,/proc/*,/sys/*,/tmp/*,/run/*,/mnt/*,/media/*,/lost+found} /source /destination
+sudo rsync -aAXvn --delete  /backup /destination
