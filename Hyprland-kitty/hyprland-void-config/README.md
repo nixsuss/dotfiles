@@ -20,4 +20,6 @@ use my hyprlandvoidconfig.sh script for dependences and if u use nvidia uncommen
 
 note: my hyprland configurations is configured to fits my needs 
 
+to run hyprland type this command in your tty : dbus-run-session Hyprland
+
 have fun :)
