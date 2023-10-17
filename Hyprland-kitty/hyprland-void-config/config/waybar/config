@@ -9,7 +9,7 @@
 //    "modules-center": ["battery"],
     "modules-right": ["mpd", "tray", "hyprland/language", "network", "pulseaudio", "clock"],
     // Modules configuration
-    "wlr/workspaces": {
+    "hyprland/workspaces": {
     //"format": "{icon}",
     "on-click": "activate",
     "on-scroll-up": "hyprctl dispatch workspace e+1",
