@@ -5,7 +5,7 @@
     "margin": "2 6 8 6",
     // "width": 1280, // Waybar width
     // Choose the order of the modules
-    "modules-left": ["wlr/workspaces", "hyprland/window"],
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
 //    "modules-center": ["battery"],
     "modules-right": ["mpd", "tray", "hyprland/language", "network", "pulseaudio", "clock"],
     // Modules configuration

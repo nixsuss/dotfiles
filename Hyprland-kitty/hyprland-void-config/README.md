@@ -4,13 +4,11 @@ to install hyprland in void Gnu/linux
 
 first you have to install xbps-src. follow the instructions here: https://github.com/void-linux/void-packages
 
-after that clone this files by : git clone https://github.com/Fadest/hyprland-void.git
+after that clone this files by : git clone https://github.com/Makrennel/hyprland-void.git
 
 then move all srcpkgs files to xbps-src/srcpkgs
 
 also append hyprland-void/common/shlibs to xbps-src/common/shlibs
-
-if u use nvidia you have move nvidia-patch in dotfiles/Hyprland-kitty/hyprland-void-config/Hyprland-void to xbps-src/srcpkgs/hyprland/patches/
 
 move Waybar-hyprland folder to xbps-src/srcpkgs/
 
