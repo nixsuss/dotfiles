@@ -13,7 +13,3 @@ Note:
 
 -in DWM/dwm-"update version"/config.h scrot program is set to /home/username/path/ etc..
 
--All my package that is use will find it in my installtion script : [archlinux-install.sh,void-sudo.sh,yay-zsh.sh]
-
--I use betterfox settings for my firefox browser : https://github.com/yokoffing/Betterfox.git
-
