@@ -73,7 +73,7 @@ static const Rule rules[] = {
 	{ "Gthumb",     NULL,     NULL,           0,         1,       -1 },
 	{ "Pavucontrol",     NULL,     NULL,           0,         1,  -1 },
 	{ "Galculator",     NULL,     NULL,           0,         1,    -1 },
-	{ "Leafpad",     NULL,     NULL,           0,         1,    -1 },
+	{ "Mousepad",     NULL,     NULL,           0,         1,    -1 },
 //	{ "Nemo",     NULL,     NULL,           0,         1,          -1 },
 //	{ "Pcmanfm",     NULL,     NULL,           0,         1,       -1 },
 	{ "qBittorrent",     NULL,     NULL,           0,         1,   -1 },
