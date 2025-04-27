@@ -1,15 +1,15 @@
 [Default Applications]
-text/x-chdr=leafpad.desktop
-text/x-csrc=leafpad.desktop
-text/plain=leafpad.desktop
-application/x-shellscript=leafpad.desktop
+text/x-chdr=org.xfce.mousepad.desktop
+text/x-csrc=org.xfce.mousepad.desktop
+text/plain=org.xfce.mousepad.desktop
+application/x-shellscript=org.xfce.mousepad.desktop
 image/jpeg=sxiv.desktop
 image/png=sxiv.desktop
 
 [Added Associations]
-text/x-chdr=leafpad.desktop;
-text/x-csrc=leafpad.desktop;
-text/plain=leafpad.desktop;
-application/x-shellscript=leafpad.desktop;
+text/x-chdr=org.xfce.mousepad.desktop;
+text/x-csrc=org.xfce.mousepad.desktop;
+text/plain=org.xfce.mousepad.desktop;
+application/x-shellscript=org.xfce.mousepad.desktop;
 image/jpeg=sxiv.desktop;
 image/png=sxiv.desktop;
