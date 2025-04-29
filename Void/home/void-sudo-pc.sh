@@ -27,6 +27,8 @@ sudo cp -v figlet/* /usr/share/figlet/
 rm -rf figlet
 mkdir -pv Pictures/screenshots
 mkdir -pv .cache/mpd
+mkdir -pv Documents
+mkdir -pv Music
 fc-cache -rv
 sudo makewhatis -a
 sudo reboot
