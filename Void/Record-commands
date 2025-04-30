@@ -1,0 +1,5 @@
+lossless: ffmpeg -s 1920x1080 -f x11grab -r 60 -i :0.0 -f alsa -i default -af "afftdn=nf=-80" -c:v h264_nvenc -qp 0 "$HOME/Videos/Video_$(date '+%Y-%m-%d_%T').mkv"
+
+or
+
+Recommended: ffmpeg -s 1920x1080 -f x11grab -r 60 -i :0.0 -f alsa -i default -af "afftdn=nf=-80" -c:v h264_nvenc -qp 20 "$HOME/Videos/Video_$(date '+%Y-%m-%d_%T').mkv"

@@ -2,7 +2,7 @@
 set -euo pipefail
 sudo mv -iv ignore.conf /etc/xbps.d/
 sudo xbps-install -Suy
-sudo xbps-install -S xorg xorg-server-devel nvidia gvim pipewire alsa-utils alsa-pipewire noto-fonts-emoji noto-fonts-ttf-extra dejavu-fonts-ttf elogind dbus-elogind dbus-elogind-x11 dbus-elogind-libs polkit polkit-gnome wireplumber libjack-pipewire neofetch rxvt-unicode base-devel libX11-devel libXft-devel libXinerama-devel git curl wget nitrogen scrot xdg-utils pcmanfm file-roller pavucontrol neofetch htop font-firacode breeze-cursors gvfs gvfs-mtp mtpfs gvfs-gphoto2 ntfs-3g dialog mtools smartmontools qt5ct qbittorrent slock xss-lock rsync mpv mpc mpd ncmpcpp zsh zsh-completions dconf-editor galculator-gtk3 ufw gparted gnome-disk-utility papirus-icon-theme breeze-icons kvantum picom amiri-font font-sil-scheherazade font-sil-lateef socklog-void torbrowser-launcher rofi dunst nerd-fonts yaru obfs4proxy numlockx clipmenu qt5-styleplugins xtools zathura-pdf-mupdf redshift sxiv xclip figlet figlet-fonts lolcat-c bottom dust yt-dlp bat lsd ffmpeg conky fribidi-devel kitty lf trash-cli terminus-font p7zip-unrar pfetch nwg-look leafpad
+sudo xbps-install -S xorg xorg-server-devel nvidia gvim pipewire alsa-utils alsa-pipewire noto-fonts-emoji noto-fonts-ttf-extra dejavu-fonts-ttf elogind dbus-elogind dbus-elogind-x11 dbus-elogind-libs polkit polkit-gnome wireplumber libjack-pipewire neofetch rxvt-unicode base-devel libX11-devel libXft-devel libXinerama-devel git curl wget nitrogen scrot xdg-utils pcmanfm file-roller pavucontrol neofetch htop font-firacode breeze-cursors gvfs gvfs-mtp mtpfs gvfs-gphoto2 ntfs-3g dialog mtools smartmontools qt5ct qbittorrent slock xss-lock rsync mpv mpc mpd ncmpcpp zsh zsh-completions dconf-editor galculator-gtk3 ufw gparted gnome-disk-utility papirus-icon-theme breeze-icons kvantum picom amiri-font font-sil-scheherazade font-sil-lateef socklog-void torbrowser-launcher rofi dunst nerd-fonts yaru obfs4proxy numlockx clipmenu qt5-styleplugins xtools zathura-pdf-mupdf redshift sxiv xclip figlet figlet-fonts lolcat-c bottom dust yt-dlp bat lsd ffmpeg conky fribidi-devel kitty lf trash-cli terminus-font p7zip-unrar pfetch nwg-look leafpad nv-codec-headers
 sudo mkdir -v /etc/cron.weekly/
 echo "#!/bin/sh
 fstrim /" | sudo tee -a /etc/cron.weekly/fstrim
@@ -29,6 +29,7 @@ mkdir -pv Pictures/screenshots
 mkdir -pv .cache/mpd
 mkdir -pv Documents
 mkdir -pv Music
+mkdir -pv Videos
 fc-cache -rv
 sudo makewhatis -a
 sudo reboot
