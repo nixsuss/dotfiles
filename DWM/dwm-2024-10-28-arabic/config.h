@@ -58,7 +58,6 @@ static const Rule rules[] = {
 	{ "librewolf", NULL,     NULL,           1 << 8,    0,        -1 },
 	{ "URxvt",   NULL,     NULL,           0,         0,          -1 },
 	{ "mpv",     NULL,     NULL,           0,         1,          -1 },
-	{ "Nitrogen",     NULL,     NULL,           0,         1,     -1 },
 	{ "stalonetray",     NULL,     NULL,           0,         1,  -1 },
 	{ "vlc",     NULL,     NULL,           0,         1,          -1 },
 //	{ "VirtualBox",    NULL,     NULL,           0,         1,    -1 },

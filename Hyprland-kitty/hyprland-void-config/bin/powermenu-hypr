@@ -12,5 +12,5 @@ case $selected in
  suspend)
     exec loginctl suspend;;
   lock)
-    exec swaylock -f -i ~/Pictures/Wallpapers/wallhaven-o3kzqp.png;;
+    exec hyprlock;;
 esac

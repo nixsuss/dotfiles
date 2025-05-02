@@ -68,6 +68,7 @@ window#waybar.hidden {
 #mode,
 #idle_inhibitor,
 #language,
+#bluetooth,
 
 #window,
 #workspaces {
@@ -89,7 +90,7 @@ window#waybar.hidden {
 }
 
 #clock {
-    background-color: @blue;
+    background-color: @green;
     color: @crust;
     border-radius: 20px;
     padding: 1px 8px;
@@ -244,7 +245,18 @@ label:focus {
 }
 
 #language {
-    background-color: @blue2;
+    background-color: @yellow;
+    color: @crust;
+	border-radius: 20px;
+	padding: 1px 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#bluetooth {
+    background-color: @blue;
     color: @crust;
 	border-radius: 20px;
 	padding: 1px 8px;

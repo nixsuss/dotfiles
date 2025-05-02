@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces", "hyprland/window"],
 //    "modules-center": ["battery"],
-    "modules-right": ["mpd", "tray", "hyprland/language", "network", "pulseaudio", "clock"],
+    "modules-right": ["mpd", "tray", "hyprland/language", "network", "pulseaudio", "bluetooth", "clock"],
     // Modules configuration
     "hyprland/workspaces": {
     //"format": "{icon}",
@@ -122,7 +122,21 @@
     		   },
     "hyprland/language": {
     "format": "{short} {variant} 󰘳",
-    "on-click": "hyprctl switchxkblayout semico---usb-gaming-keyboard-  next",
-    			 }
+    "on-click": "hyprctl switchxkblayout sino-wealth-usb-keyboard-1 next",
+    			 },
+    "bluetooth": {
+	// "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
+	"format": " {status}",
+	"format-disabled": "", // an empty format will hide the module
+	"format-connected": " {device_alias} connected",
+	"format-connected-battery": " {device_alias} {device_battery_percentage}%",
+        "format-on": " ON",
+        "format-off": " OFF",
+	"tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+	"tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+        "on-click": "blueman-manager"  // Open Bluetooth manager (optional)
+		 }
 }
 
