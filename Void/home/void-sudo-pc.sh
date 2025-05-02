@@ -25,7 +25,7 @@ sudo mv -iv Fonts/* /usr/share/fonts/
 sudo mv -iv .local/bin/librewolf /usr/bin/
 sudo cp -v figlet/* /usr/share/figlet/
 rm -rf figlet
-mkdir -pv Pictures/screenshots
+mkdir -pv Pictures/{screenshots,wallpaper}
 mkdir -pv .cache/mpd
 mkdir -pv Documents
 mkdir -pv Music
