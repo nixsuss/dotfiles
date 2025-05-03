@@ -140,7 +140,7 @@
 		 },
     "disk": {
 	"interval": 30,
-	"format": "{percentage_free}% free on 󰋊",
+	"format": "{free} 󰋊",
 	    }
 
 }
