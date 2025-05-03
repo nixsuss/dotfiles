@@ -3,3 +3,4 @@ set -eu
 sudo xbps-install -Sy bluez bluez-alsa libspa-bluetooth blueman
 sudo ln -sv /etc/sv/bluetoothd /var/service/
 sudo usermod -aG bluetooth $USER
+sudo makewhatis -a

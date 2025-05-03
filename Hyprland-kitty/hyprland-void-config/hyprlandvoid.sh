@@ -6,3 +6,4 @@ sudo sed -i 's/GRUB_CMDLINE_LINUX_DEFAULT="loglevel=4 mitigations=off/GRUB_CMDLI
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 sudo usermod -aG _seatd $USER
 sudo ln -sv /etc/sv/seatd /var/service/
+sudo makewhatis -a

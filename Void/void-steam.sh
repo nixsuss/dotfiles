@@ -8,3 +8,4 @@ echo "To install it go to this link: https://github.com/flightlessmango/MangoHud
 echo "Download the file under Releases"
 echo "Extract it, and from within the extracted folder in terminal, execute:"
 echo "./mangohud-setup.sh install"
+echo "After that run this command: sudo makewhatis -a"
