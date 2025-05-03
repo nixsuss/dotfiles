@@ -141,6 +141,7 @@
     "disk": {
 	"interval": 30,
 	"format": "{free} 󰋊",
+        "format-alt": "{percentage_free}% free on 󰋊"
 	    }
 
 }
