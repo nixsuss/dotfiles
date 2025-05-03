@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces", "hyprland/window"],
 //    "modules-center": ["battery"],
-    "modules-right": ["mpd", "tray", "hyprland/language", "network", "pulseaudio", "bluetooth", "clock"],
+    "modules-right": ["mpd", "tray", "hyprland/language", "disk", "network", "pulseaudio", "bluetooth", "clock"],
     // Modules configuration
     "hyprland/workspaces": {
     //"format": "{icon}",
@@ -137,6 +137,11 @@
 	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
 	"tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
         "on-click": "blueman-manager"  // Open Bluetooth manager (optional)
-		 }
+		 },
+    "disk": {
+	"interval": 30,
+	"format": "{percentage_free}% free on 󰋊",
+	    }
+
 }
 

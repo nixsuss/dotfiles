@@ -69,6 +69,7 @@ window#waybar.hidden {
 #idle_inhibitor,
 #language,
 #bluetooth,
+#disk,
 
 #window,
 #workspaces {
@@ -257,6 +258,17 @@ label:focus {
 
 #bluetooth {
     background-color: @blue;
+    color: @crust;
+	border-radius: 20px;
+	padding: 1px 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#disk {
+    background-color: @rosewater;
     color: @crust;
 	border-radius: 20px;
 	padding: 1px 8px;
