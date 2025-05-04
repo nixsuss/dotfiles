@@ -75,8 +75,7 @@ static const struct arg args[] = {
 	//{ cpu_perc, "[CPU  %s%%] ", NULL	      },
 //	{ ram_used, "^c#00FF00^[%sB ", NULL	      },
 //	{ ram_perc, "^c#00FF00^ %s%%] ", NULL	      },
-	{ run_command, "^c#0082FC^[ %s ", "bluetoothctl show | awk -F\": \" '/Powered/ { print $2 }'" },
-	{ run_command, "^c#0082FC^%s] ", "bluetoothsls" },
+	{ run_command, "^c#0082FC^[ %s] ", "bluetoothsls" },
 	{ datetime, "^c#FF7F50^[ %s] ",           "%a %b %d" },
 	{ datetime, "^c#00FF00^[ %s] ",           "%r" },
 };
