@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Get the name of the connected Bluetooth device
+device_name=$(bluetoothctl devices Connected | awk '{print $3,$4}' | head -1)
+
+# Get the battery level of the connected Bluetooth device
+battery_level=$(bluetoothctl info | awk -F"[()]" '/Battery/ { print $2}')
+
+# Format the output
+if [ -n "$device_name" ]; then
+    echo "$device_name $battery_level%"
+else
+	echo "No Device"
+fi
