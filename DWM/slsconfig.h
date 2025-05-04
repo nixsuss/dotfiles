@@ -63,12 +63,13 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ run_command, "^c#7DF9FF^[ %s] ", "mpc | head -n1" },
+//	{ run_command, "^c#7DF9FF^[  %s] ", "mpc | head -n1" },
 	//{ datetime, "%s",           "%F %T" },
 	//{ wifi_perc, "W: (%3s%% on ", "wlp8s0" },
 	{keymap, "^c#FFD700^[󰘳 %s] ",NULL       },
-	{ disk_free, "^c#FFFFFF^[%sB 󰋊] ", "/" },
-        { netspeed_rx, "^c#FFEBCD^ %sB/s ", "enp3s0" },
+	{ disk_free, "^c#FFFFFF^[󰋊 %sB free] ", "/" },
+	{ netspeed_tx, "^c#FFEBCD^  %sB/s ", "enp3s0" },
+	{ netspeed_rx, "^c#FFEBCD^  %sB/s ", "enp3s0" },
 	{ run_command, "^c#FF69B4^[  %s ", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2, $4 }' | head -n1" },
 	{ run_command, "^c#FF69B4^ %s] ", "amixer sget Capture | awk -F\"[][]\" '/%/ { print $2, $4 }' | head -n1" },
 //	{ disk_perc, "^c#7DF9FF^ %s%%] ", "/" },
@@ -77,5 +78,5 @@ static const struct arg args[] = {
 //	{ ram_perc, "^c#00FF00^ %s%%] ", NULL	      },
 	{ run_command, "^c#0082FC^[ %s] ", "bluetoothsls" },
 	{ datetime, "^c#FF7F50^[ %s] ",           "%a %b %d" },
-	{ datetime, "^c#00FF00^[ %s] ",           "%r" },
+	{ datetime, "^c#00FF00^[ %s] ",           "%I:%M:%P" },
 };
