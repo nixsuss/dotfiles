@@ -6,7 +6,7 @@ sudo xbps-install -S xorg xorg-server-devel nvidia gvim pipewire alsa-utils alsa
 sudo mkdir -v /etc/cron.weekly/
 echo "#!/bin/sh
 fstrim /" | sudo tee -a /etc/cron.weekly/fstrim
-echo "omit_drivers+=" nouveau "" | sudo tee -a /etc/dracut.conf.d/nouveau.conf
+echo 'omit_drivers+=" nouveau "' | sudo tee -a /etc/dracut.conf.d/nouveau.conf
 echo "blacklist nouveau" | sudo tee -a /etc/modprobe.d/nouveau.conf
 sudo chmod 777 /etc/cron.weekly/fstrim
 echo "set number" | sudo tee -a /etc/vimrc.local
