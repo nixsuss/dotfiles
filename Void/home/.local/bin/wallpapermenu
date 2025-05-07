@@ -10,6 +10,8 @@ if [ -n "$CHOICE" ]; then
 
 		wal -i "$CHOICE"
 		ln -sf ~/.cache/wal/colors.Xresources ~/.Xresources
+		ln -sf ~/.cache/wal/dusntrc ~/.config/dunst/
+		pkill dunst; setsid -f dunst
 		cat ~/.Xresources ~/.cache/wal/xrdb_extra | xrdb -merge
 		sleep 0.4
 		xdotool key super+F5

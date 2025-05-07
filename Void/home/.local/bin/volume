@@ -23,7 +23,7 @@ function send_notification {
     # https://en.wikipedia.org/wiki/Box-drawing_character
     bar=$(seq -s "─" $(($volume / 2)) | sed 's/[0-9]//g')
     # Send the notification
-     dunstify -i /dev/null -t 8000 -r 2593 -u normal -h int:value:"$volume" "Volume: ${volume}%"
+     dunstify -t 8000 -r 2593 -u normal -h int:value:"$volume" "Volume: ${volume}%"
 }
 
 function send_notification1 {
@@ -32,7 +32,7 @@ function send_notification1 {
     # https://en.wikipedia.org/wiki/Box-drawing_character
     bar=$(seq -s "─" $(($volume / 2)) | sed 's/[0-9]//g')
     # Send the notification
-     dunstify -i /dev/null -t 8000 -r 2593 -u normal -h int:value:"$volume" "Volume: ${volume}%"
+     dunstify -t 8000 -r 2593 -u normal -h int:value:"$volume" "Volume: ${volume}%"
 }
 case $1 in
     up)
