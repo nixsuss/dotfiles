@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# slightly scuffed wallpaper picker menu for use with pywal - uses nsxiv if installed, otherwise uses dmenu
+
+FOLDER=~/Pictures/wallpaper # wallpaper folder
+
+	CHOICE=$(nsxiv -otb $FOLDER)
+
+if [ -n "$CHOICE" ]; then
+
+		wal -i "$CHOICE"
+		ln -sf ~/.cache/wal/colors.Xresources ~/.Xresources
+		cat ~/.Xresources ~/.cache/wal/xrdb_extra | xrdb -merge
+		sleep 0.4
+		xdotool key super+F5
+	else
+
+	echo "No Wallpaper has been set"
+	exit 1
+fi	
