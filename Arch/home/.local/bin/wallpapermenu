@@ -15,8 +15,10 @@ if [ -n "$CHOICE" ]; then
 		cat ~/.Xresources ~/.cache/wal/xrdb_extra | xrdb -merge
 		sleep 0.4
 		xdotool key super+F5
+		dunstify -u normal "Wallpaper changed"
 	else
 
 	echo "No Wallpaper has been set"
+	dunstify -u critical "No Wallpaper has been set"
 	exit 1
 fi	
