@@ -1,3 +1,0 @@
-#!/bin/bash
-cd /home/ahmed/Appimages
-./LibreWolf.x86_64.AppImage
