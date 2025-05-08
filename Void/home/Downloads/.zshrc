@@ -2,6 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
+# cat ~/.cache/wal/sequences
 export ZSH="$HOME/.oh-my-zsh"
 export EDITOR="vim"
 
