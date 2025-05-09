@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# slightly scuffed wallpaper picker menu for use with pywal - uses nsxiv if installed, otherwise uses dmenu
+
+FOLDER=~/Pictures/wallpaper # wallpaper folder
+
+	CHOICE=$(nsxiv -otb $FOLDER)
+
+if [ -n "$CHOICE" ]; then
+
+	       	wal -i "$CHOICE"
+		swww img "$CHOICE"
+		rm -rfv ~/.config/wofi/colors-waybar.css
+		rm -rfv ~/.config/waybar/colors-waybar.css
+		rm -rfv ~/.config/mako/config
+		rm -rfv ~/.Xresources 
+		ln -sfv ~/.cache/wal/colors-waybar.css ~/.config/waybar/
+		ln -sfv ~/.cache/wal/colors-waybar.css ~/.config/wofi/
+		ln -sfv ~/.cache/wal/colors.Xresources ~/.Xresources
+		ln -sfv ~/.cache/wal/mako ~/.config/mako/config
+		pkill mako; setsid -f mako
+		pkill waybar; setsid -f waybar
+		xrdb -merge ~/.Xresources
+	else
+
+	echo "No Wallpaper has been set"
+	exit 1
+fi	

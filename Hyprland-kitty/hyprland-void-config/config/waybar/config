@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces", "hyprland/window"],
 //    "modules-center": ["battery"],
-    "modules-right": ["mpd", "tray", "hyprland/language", "disk", "network", "pulseaudio", "bluetooth", "clock"],
+    "modules-right": ["mpd", "tray", "hyprland/language", "memory", "cpu", "pulseaudio", "bluetooth", "clock"],
     // Modules configuration
     "hyprland/workspaces": {
     //"format": "{icon}",
@@ -74,11 +74,11 @@
         "format-alt": "{:%d-%m-%Y}  "
     },
     "cpu": {
-        "format": "{usage}% ",
+        "format": "{usage}%  ",
         "tooltip": false
     },
     "memory": {
-        "format": "{}% "
+        "format": "{}%  "
     },
     "battery": {
         "states": {

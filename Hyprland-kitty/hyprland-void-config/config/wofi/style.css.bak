@@ -4,7 +4,22 @@
 * Author: Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
 *
 */
-@import ".config/wofi/colors-waybar.css";
+@define-color base00 #1e1e2e;
+@define-color base01 #3C3836;
+@define-color base02 #504945;
+@define-color base03 #665C54;
+@define-color base04 #BDAE93;
+@define-color base06 #94e2d5;
+@define-color base07 #FBF1C7;
+@define-color base08 #FB4934;
+@define-color base09 #FE8019;
+@define-color base0A #FABD2F;
+@define-color base0B #B8BB26;
+@define-color base0C #8EC07C;
+@define-color base0D #83A598;
+@define-color base0E #D3869B;
+@define-color base0F #D65D0E;
+
 #window {
     opacity: 0.9;
     border:  0px;
@@ -19,24 +34,24 @@
     padding: 10px;
     margin: 0px;
     font-size: 28px;
-    color: @color4;
-    background-color: @color0;
+    color: @base06;
+    background-color: @base00;
 }
 
 #inner-box {
 	margin: 0px;
 	color: #ffffff;
-	background-color: @color0;
+	background-color: @base00;
 }
 
 #outer-box {
         margin: 0px;
-	background-color: @color0;
+	background-color: @base00;
        	border-radius: 10px;
 }
 
 #selected {
-	background-color: @color0;
+	background-color: @base00;
 }
 
 #entry {
@@ -46,7 +61,7 @@
 
 #scroll {
 	margin: 5px;
-	background-color: @color0;
+	background-color: @base00;
 }
 
 #text {
@@ -55,9 +70,9 @@
 }
 
 #text:selected {
-	color: color4;
+	color: @base06;
 }
 
 #img {
-	background-color: @color0;
+	background-color: @base00;
 }

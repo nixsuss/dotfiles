@@ -1,5 +1,4 @@
 @import "mocha.css";
-@import "colors-waybar.css";
 
 * {
     border: none;
@@ -12,8 +11,8 @@
 }
 
 window#waybar {
-    background: @color0;
-    border: 1px solid @color4;
+    background: @base;
+    border: 1px solid @red;
     border-radius: 20px;
 }
 
@@ -24,7 +23,7 @@ window#waybar.hidden {
 #window {
     border-radius: 20px;
     background-color: transparent;
-    color: @color4;
+    color: @sky;
     padding: 1px 8px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -33,8 +32,8 @@ window#waybar.hidden {
 }
 
 #workspaces button {
-    background-color: @color0;
-    color: @colro2;
+    background-color: @surface0;
+    color: @teal;
     padding: 0px 2px;
     border-radius: 20px;
     margin-left: 0px;
@@ -42,17 +41,17 @@ window#waybar.hidden {
 }
 
 #workspaces button:hover {
-    background-color: @color0;
-    color: @color4;
+    background-color: @base;
+    color: @teal;
 }
 
 #workspaces button.active {
-    background-color: @color4;
-    color: @color0;
+    background-color: @surface0;
+    color: @red;
 }
 
 #workspaces button.urgent {
-    background-color: @color4;
+    background-color: @red;
 }
 
 #clock,
@@ -102,8 +101,8 @@ window#waybar.hidden {
     margin-right: 2px;
 }
 
-#cpu {
-    background-color: @sky;
+#battery {
+    background-color: @red;
     color: @crust;
     border-radius: 20px;
     padding: 1px 8px;
@@ -163,7 +162,7 @@ label:focus {
 }
 
 #memory {
-    background-color: @red;
+    background-color: @maroon;
     color: @crust;
 	border-radius: 20px;
 	padding: 1px 8px;
