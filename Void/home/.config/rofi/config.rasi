@@ -9,10 +9,10 @@ configuration {
 }
 
 @theme "/dev/null"
+@import "~/.cache/wal/rofi.rasi"
 
 * {
   bg: #000000;
-  bg-alt: #202020;
 
   fg: #FFFFFF;
   fg-alt: #505050;
