@@ -7,6 +7,6 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 sudo usermod -aG _seatd $USER
 sudo ln -sv /etc/sv/seatd /var/service/
 sudo makewhatis -a
-mv -vi config/* ~/.config/
-mv -vi bin/* ~/.local/bin/
+cp -rv config/* ~/.config/
+co -rv bin/* ~/.local/bin/
 rm -rfv config bin

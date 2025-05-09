@@ -14,6 +14,7 @@ if [ -n "$CHOICE" ]; then
 		rm -rfv ~/.config/waybar/colors-waybar.css
 		rm -rfv ~/.config/mako/config
 		rm -rfv ~/.Xresources 
+		ln -sfv ~/.cache/wal/colors-hyprland.conf  ~/.config/hypr/colors-hyprland.conf 
 		ln -sfv ~/.cache/wal/colors-waybar.css ~/.config/waybar/
 		ln -sfv ~/.cache/wal/colors-waybar.css ~/.config/wofi/
 		ln -sfv ~/.cache/wal/colors.Xresources ~/.Xresources
@@ -21,8 +22,10 @@ if [ -n "$CHOICE" ]; then
 		pkill mako; setsid -f mako
 		pkill waybar; setsid -f waybar
 		xrdb -merge ~/.Xresources
+		notify-send -u normal "wallpaper changed"
 	else
 
 	echo "No Wallpaper has been set"
+	notify-send -u critical "No Wallpaper has been set"
 	exit 1
 fi	
