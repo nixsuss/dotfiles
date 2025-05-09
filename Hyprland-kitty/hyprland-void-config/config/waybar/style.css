@@ -33,7 +33,7 @@ window#waybar.hidden {
 }
 
 #workspaces button {
-    background-color: @color0;
+    background-color: transparent;
     color: @colro2;
     padding: 0px 2px;
     border-radius: 20px;
@@ -42,7 +42,7 @@ window#waybar.hidden {
 }
 
 #workspaces button:hover {
-    background-color: @color0;
+    background-color: transparent;
     color: @color4;
 }
 
@@ -79,7 +79,7 @@ window#waybar.hidden {
 
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
-    background-color: @surface0;
+    background-color: @color0;
     margin-left: 5px;
     border-radius: 20px;
     margin-top: 5px;
