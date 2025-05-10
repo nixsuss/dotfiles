@@ -19,6 +19,7 @@ if [ -n "$CHOICE" ]; then
 		ln -sfv ~/.cache/wal/colors-waybar.css ~/.config/wofi/
 		ln -sfv ~/.cache/wal/colors.Xresources ~/.Xresources
 		ln -sfv ~/.cache/wal/mako ~/.config/mako/config
+		hyprctl reload
 		pkill mako; setsid -f mako
 		pkill waybar; setsid -f waybar
 		xrdb -merge ~/.Xresources
