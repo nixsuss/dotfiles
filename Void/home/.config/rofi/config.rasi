@@ -14,7 +14,6 @@ configuration {
 * {
   bg: #000000;
 
-  fg: #FFFFFF;
   fg-alt: #505050;
 
   background-color: @bg;
@@ -35,7 +34,7 @@ element {
 }
 
 element selected {
-  text-color: @fg;
+  text-color: #ffffff;
 }
 
 element-text {
