@@ -8,5 +8,5 @@ sudo usermod -aG _seatd $USER
 sudo ln -sv /etc/sv/seatd /var/service/
 sudo makewhatis -a
 cp -rv config/* ~/.config/
-co -rv bin/* ~/.local/bin/
+cp -rv bin/* ~/.local/bin/
 rm -rfv config bin
