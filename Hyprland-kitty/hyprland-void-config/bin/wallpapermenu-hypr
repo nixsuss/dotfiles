@@ -10,10 +10,6 @@ if [ -n "$CHOICE" ]; then
 
 	       	wal -i "$CHOICE"
 		swww img "$CHOICE"
-		rm -rfv ~/.config/wofi/colors-waybar.css
-		rm -rfv ~/.config/waybar/colors-waybar.css
-		rm -rfv ~/.config/mako/config
-		rm -rfv ~/.Xresources 
 		ln -sfv ~/.cache/wal/colors-hyprland.conf  ~/.config/hypr/colors-hyprland.conf 
 		ln -sfv ~/.cache/wal/colors-waybar.css ~/.config/waybar/
 		ln -sfv ~/.cache/wal/colors-waybar.css ~/.config/wofi/

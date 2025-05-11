@@ -9,13 +9,11 @@ FOLDER=~/Pictures/wallpaper # wallpaper folder
 if [ -n "$CHOICE" ]; then
 
 		wal -i "$CHOICE"
-		rm -rf ~/.Xresources ~/.config/dunst/dunstrc
-		ln -sf ~/.cache/wal/colors.Xresources ~/.Xresources
-		ln -sf ~/.cache/wal/dunstrc ~/.config/dunst/
+		ln -sfv ~/.cache/wal/colors.Xresources ~/.Xresources
+		ln -sfv ~/.cache/wal/dunstrc ~/.config/dunst/
 		pkill dunst; setsid -f dunst
 		cat ~/.Xresources ~/.cache/wal/xrdb_extra | xrdb -merge
-		sleep 0.4
-		xdotool key super+F5
+		xdotool key shift+super+F5
 		dunstify -u normal "Wallpaper changed"
 	else
 
