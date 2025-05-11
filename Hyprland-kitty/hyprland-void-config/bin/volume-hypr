@@ -23,7 +23,7 @@ function send_notification {
     # https://en.wikipedia.org/wiki/Box-drawing_character
     bar=$(seq -s "─" $(($volume / 3)) | sed 's/[0-9]//g')
     # Send the notification
-    notify-send -h string:x-canonical-private-synchronous:sys-notify -u low "Volume: ${volume}%" "$bar"
+    notify-send -h string:x-canonical-private-synchronous:sys-notify -u normal "Volume: ${volume}%" "$bar"
 }
 
 function send_notification1 {
