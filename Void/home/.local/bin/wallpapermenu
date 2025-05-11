@@ -13,6 +13,7 @@ if [ -n "$CHOICE" ]; then
 		ln -sfv ~/.cache/wal/dunstrc ~/.config/dunst/
 		pkill dunst; setsid -f dunst
 		cat ~/.Xresources ~/.cache/wal/xrdb_extra | xrdb -merge
+		sleep 0.2
 		xdotool key shift+super+F5
 		dunstify -u normal "Wallpaper changed"
 	else
