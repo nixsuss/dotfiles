@@ -1,20 +1,27 @@
-cat ~/.cache/wal/sequences
-
 #History
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 setopt appendhistory
+setopt auto_pushd
 
 #AutoCompletion
 autoload -U compinit
 zstyle ':completion:*' menu select
+# Auto complete with case insenstivity
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+# Colorize completions using default `ls` colors. 
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+zmodload zsh/complist
 compinit
+_comp_options+=(globdots)		# Include hidden files.
+
 
 export EDITOR="vim"
 source ~/.myzshthemes/duellj.zsh-theme
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+cat ~/.cache/wal/sequences
 
 #Keybinds
 bindkey  "^[[H"   beginning-of-line
