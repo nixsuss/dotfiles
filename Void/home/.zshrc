@@ -8,6 +8,7 @@ setopt auto_pushd
 #AutoCompletion
 autoload -U compinit
 zstyle ':completion:*' menu select
+zstyle ':completion:*' completer _extensions _complete _approximate
 # Auto complete with case insenstivity
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 # Colorize completions using default `ls` colors. 
