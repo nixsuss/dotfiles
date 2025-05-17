@@ -22,7 +22,6 @@ sudo ln -sv /usr/share/fontconfig/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.
 sudo mkdir -pv /etc/pipewire/pipewire.conf.d
 sudo ln -sv /usr/share/examples/wireplumber/10-wireplumber.conf /etc/pipewire/pipewire.conf.d/
 sudo mv -iv Fonts/* /usr/share/fonts/
-sudo mv -iv .local/bin/librewolf /usr/bin/
 sudo cp -v figlet/* /usr/share/figlet/
 rm -rf figlet
 mkdir -pv Pictures/{screenshots,wallpaper}
@@ -32,4 +31,5 @@ mkdir -pv Music
 mkdir -pv Videos
 fc-cache -rv
 sudo makewhatis -a
+chsh -s /bin/zsh
 sudo reboot
