@@ -1,6 +1,6 @@
 #!/bin/bash
 set -eu
-sudo xbps-install -Sy gamemode wine wine-32bit libgamemode-32bit winetricks wine-mono freetype-32bit gamescope gamescope-32bit steam gst-plugins-bad1 gst-libav gst-libav-32bit gst-plugins-bad1-32bit gst-plugins-ugly1 gst-plugins-ugly1-32bit gst-plugins-good1-32bit
+sudo xbps-install -Sy gamemode wine wine-32bit libgamemode-32bit winetricks wine-mono freetype-32bit gamescope gamescope-32bit gst-plugins-bad1 gst-libav gst-libav-32bit gst-plugins-bad1-32bit gst-plugins-ugly1 gst-plugins-ugly1-32bit gst-plugins-good1-32bit gst-plugins-good1 qarma
 sudo makewhatis -a
 echo
 echo "Mangohud is not installed!!!"
