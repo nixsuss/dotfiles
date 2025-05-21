@@ -25,6 +25,7 @@ sudo ln -sv /usr/share/examples/wireplumber/10-wireplumber.conf /etc/pipewire/pi
 sudo mv -iv Fonts/* /usr/share/fonts/
 sudo cp -v figlet/* /usr/share/figlet/
 rm -rfv figlet
+rm -rfv Fonts
 mkdir -pv Pictures/{screenshots,wallpaper}
 mkdir -pv .cache/mpd
 mkdir -pv Documents
