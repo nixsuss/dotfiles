@@ -1,9 +1,7 @@
-/*
-* wofi style. Colors are from authors below.
-* Base16 Gruvbox dark, medium
-* Author: Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
-*
-*/
+*{
+    all:unset
+}
+
 @import ".config/wofi/colors-waybar.css";
 #window {
     opacity: 0.9;
@@ -55,7 +53,7 @@
 }
 
 #text:selected {
-	color: color4;
+	color: @color4;
 }
 
 #img {
