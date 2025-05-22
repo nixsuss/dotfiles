@@ -31,6 +31,8 @@ mkdir -pv .cache/mpd
 mkdir -pv Documents
 mkdir -pv Music
 mkdir -pv Videos
+mkdir -pv .icons/default
+mkdir -pv .themes
 fc-cache -rv
 sudo makewhatis -a
 chsh -s /bin/zsh
