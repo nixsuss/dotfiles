@@ -8,7 +8,7 @@ echo "#!/bin/sh
 fstrim /" | sudo tee -a /etc/cron.weekly/fstrim
 echo 'omit_drivers+=" nouveau "' | sudo tee -a /etc/dracut.conf.d/nouveau.conf
 echo "blacklist nouveau" | sudo tee -a /etc/modprobe.d/nouveau.conf
-echo -e "\nahmed ALL=(ALL) NOPASSWD: /usr/bin/shutdown, /usr/bin/reboot, /usr/bin/poweroff, /usr/bin/halt, /usr/bin/zzz\n\nDefaults        pwfeedback" | sudo tee -a /etc/sudoers
+echo -e "\n$USER ALL=(ALL) NOPASSWD: /usr/bin/shutdown, /usr/bin/reboot, /usr/bin/poweroff, /usr/bin/halt, /usr/bin/zzz\n\nDefaults        pwfeedback" | sudo tee -a /etc/sudoers
 sudo chmod 777 /etc/cron.weekly/fstrim
 echo "set number" | sudo tee -a /etc/vimrc.local
 sudo ln -sv /etc/sv/{elogind,dbus,polkitd,ufw,socklog-unix,nanoklogd,tor} /var/service/
