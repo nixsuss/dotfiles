@@ -6,6 +6,6 @@ case "$chosen" in
 	"Power Off") sudo shutdown -P now ;;
 	"Reboot") sudo reboot ;;
 	"Lock") slock ;;
-	"Suspend") sudo zzz ;;
+	"Suspend") loginctl suspend ;;
 	*) exit 1 ;;
 esac

@@ -10,7 +10,7 @@ case $selected in
    reboot)
     exec sudo reboot;;
  suspend)
-    exec sudo zzz;;
+    exec loginctl suspend;;
   lock)
     exec hyprlock;;
 esac

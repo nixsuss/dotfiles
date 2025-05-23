@@ -4,10 +4,12 @@ pkill pipewire
 pkill mako
 pkill mpd
 pkill mpDris2
+pkill hypridle
 /usr/libexec/polkit-gnome-authentication-agent-1 &
 pipewire &
 pipewire-pulse &
 mako &
+hypridle &
 #mpd &
 sleep 2
 #mpDris2 &
