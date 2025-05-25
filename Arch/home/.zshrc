@@ -65,11 +65,10 @@ alias yS="yay -Si"
 alias v="vim"
 alias ls="lsd"
 alias du="dust"
-alias ahmed="neofetch"
+alias ahmed="fastfetch"
 alias wttr="curl 'https://wttr.in/Port_Said?0' --silent --max-time 3"
 
 # System Info on Startup
-pfetch
 # neofetch --ascii_distro void_small
 # curl 'https://wttr.in/Port_Said?0' --silent --max-time 3
 
