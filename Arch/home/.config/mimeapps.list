@@ -3,13 +3,13 @@ text/x-chdr=leafpad.desktop
 text/x-csrc=leafpad.desktop
 text/plain=leafpad.desktop
 application/x-shellscript=leafpad.desktop
-image/jpeg=sxiv.desktop
-image/png=sxiv.desktop
+image/jpeg=nsxiv.desktop
+image/png=nsxiv.desktop
 
 [Added Associations]
 text/x-chdr=leafpad.desktop;
 text/x-csrc=leafpad.desktop;
 text/plain=leafpad.desktop;
 application/x-shellscript=leafpad.desktop;
-image/jpeg=sxiv.desktop;
-image/png=sxiv.desktop;
+image/jpeg=nsxiv.desktop;
+image/png=nsxiv.desktop;

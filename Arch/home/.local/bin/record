@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+start(){
+
+ffmpeg -s 1920x1080 -f x11grab -r 60 -i :0.0 -c:v h264_nvenc -qp 0 "$HOME/Videos/Video_$(date '+%Y-%m-%d_%T').mkv" &
+echo $! > /tmp/recpid
+
+ffmpeg -f alsa -i default "$HOME/Videos/audio_$(date '+%Y-%m-%d_%T').wav" &
+echo $! > /tmp/audpid
+notify-send -t 500 -h string:bgcolor:#a3be8c "Recording started"
+}
+
+end(){
+
+kill -15 "$(cat /tmp/recpid)" "$(cat /tmp/audpid)" && rm -f /tmp/recpid /tmp/audpid
+notify-send -t 500 -h string:bgcolor:#bf616a "Recording ended"
+} 
+
+([[ -f /tmp/recpid ]] && end && exit 0) || start

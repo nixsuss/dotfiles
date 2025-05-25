@@ -2,19 +2,18 @@ configuration {
   display-drun: "Applications:";
   display-window: "Windows:";
   drun-display-format: "{icon} {name}";
-  font: "Cascadia Code PL SemiBold Italic 16";
+  font: "DejaVu Sans Condensed Bold 16";
   modi: "drun";
   show-icons: true;
   icon-theme: "Papirus";
 }
 
 @theme "/dev/null"
+@import "~/.cache/wal/rofi.rasi"
 
 * {
   bg: #000000;
-  bg-alt: #202020;
 
-  fg: #FFFFFF;
   fg-alt: #505050;
 
   background-color: @bg;
@@ -35,7 +34,7 @@ element {
 }
 
 element selected {
-  text-color: @fg;
+  text-color: #ffffff;
 }
 
 element-text {
