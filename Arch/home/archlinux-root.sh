@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/env bash
 ln -sfv /usr/share/zoneinfo/Africa/Cairo /etc/localtime
 hwclock --systohc
 sed -i 's/^#\(en_US.UTF-8 UTF-8\)/\1/' /etc/locale.gen
