@@ -1,8 +1,6 @@
-#!/bin/bash
-set -eu
 ln -sfv /usr/share/zoneinfo/Africa/Cairo /etc/localtime
 hwclock --systohc
-sed -i 's/^#\(en_US.UTF-8 UTF-8\)/\1/' /etc/locale.gen
+#uncomment en_US.UTF-8 UTF-8 in /etc/locale.gen
 locale-gen
 echo "LANG=en_US.UTF-8" > /etc/locale.conf
 echo "ArchLinux" > /etc/hostname
@@ -14,3 +12,4 @@ passwd ahmed
 grub-install --bootloader-id=ArchLinux
 grub-mkconfig -o /boot/grub/grub.cfg
 EDITOR=nano visudo
+systemctl enable dhcpcd
