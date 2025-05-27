@@ -6,7 +6,7 @@ exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 #wal -R
 #urxvtd -q -o -f &
 picom -b &
-pipewire &
+blueman-applet &
 xss-lock slock &
 dunst &
 clipmenud &
