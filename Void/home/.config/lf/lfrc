@@ -1,4 +1,9 @@
-$cat .cache/wal/sequences
+${{
+    if [ -f "$HOME/.cache/wal/sequences" ]; then
+        cat "$HOME/.cache/wal/sequences"
+    fi
+}}
+
 set previewer ~/.config/lf/lf_kitty_preview
 set cleaner ~/.config/lf/lf_kitty_clean
 
