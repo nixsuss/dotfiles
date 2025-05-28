@@ -1,0 +1,16 @@
+#!/bin/bash
+
+entries="⏻ Shutdown\n⭮ Reboot\n⏾ Suspend\n Lock"
+
+selected=$(echo -e $entries|wofi --width 450 --height 150 --dmenu --cache-file /dev/null | awk '{print tolower($2)}')
+
+case $selected in
+  shutdown)
+    exec systemctl poweroff;;
+   reboot)
+    exec systemctl reboot;;
+ suspend)
+    exec systemctl suspend;;
+  lock)
+    exec hyprlock;;
+esac

@@ -1,0 +1,280 @@
+@import "mocha.css";
+@import "colors-waybar.css";
+
+* {
+    border: none;
+    border-radius: 2px;
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: JetBrainsMonoNL Nerd Font;
+    font-weight: bold;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: @color0;
+    border: 1px solid @color4;
+    border-radius: 20px;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+#window {
+    border-radius: 20px;
+    background-color: transparent;
+    color: @color4;
+    padding: 1px 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+#workspaces button {
+    background-color: transparent;
+    color: @colro2;
+    padding: 0px 2px;
+    border-radius: 20px;
+    margin-left: 0px;
+    margin-right: 1px;
+}
+
+#workspaces button:hover {
+    background-color: transparent;
+    color: @color4;
+}
+
+#workspaces button.active {
+    background-color: @color4;
+    color: @color0;
+}
+
+#workspaces button.urgent {
+    background-color: @color4;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#language,
+#bluetooth,
+#disk,
+
+#window,
+#workspaces {
+    margin: 0 2px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    background-color: @color0;
+    margin-left: 5px;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:first-child > #workspaces {
+    margin-right: 0px;
+}
+
+#clock {
+    background-color: @green;
+    color: @crust;
+    border-radius: 20px;
+    padding: 1px 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#cpu {
+    background-color: @sky;
+    color: @crust;
+    border-radius: 20px;
+    padding: 1px 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#battery.charging, #battery.plugged {
+    color: @crust;
+    background-color: @green;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background-color: #f53c3c;
+    color: #ffffff;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#custom-cyclebg {
+    background-color: @mauve;
+    color: @crust;
+	border-radius: 20px;
+	padding: 1px 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+    
+    
+#mpd {
+    background-color: @green;
+    color: @crust;
+	border-radius: 20px;
+	padding: 1px 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#memory {
+    background-color: @red;
+    color: @crust;
+	border-radius: 20px;
+	padding: 1px 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#network {
+    background-color: @maroon;
+    color: @crust;
+	border-radius: 20px;
+	padding: 1px 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#network.disconnected {
+    background-color: @maroon;
+    padding: 1px 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    
+}
+
+#pulseaudio {
+    background-color: @mauve;
+    color: @crust;
+	border-radius: 20px;
+	padding: 1px 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#tray {
+    background-color: @surface0;
+	border-radius: 20px;
+	padding: 1px 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    margin-right: 5px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: @blue;
+}
+
+#idle_inhibitor {
+    background-color: @lavender;
+    color: @crust;
+	border-radius: 20px;
+	padding: 1px 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#idle_inhibitor.activated {
+    background-color: @lavender;
+    color: @crust;
+	border-radius: 20px;
+	padding: 1px 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#language {
+    background-color: @yellow;
+    color: @crust;
+	border-radius: 20px;
+	padding: 1px 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#bluetooth {
+    background-color: @blue;
+    color: @crust;
+	border-radius: 20px;
+	padding: 1px 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#disk {
+    background-color: @rosewater;
+    color: @crust;
+	border-radius: 20px;
+	padding: 1px 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
