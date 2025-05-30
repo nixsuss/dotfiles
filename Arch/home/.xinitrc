@@ -13,5 +13,5 @@ clipmenud &
 numlockx
 #redshift &
 #conky -c .config/conkyrc &
-nvidia-settings --load-config-only
+#nvidia-settings --load-config-only
 exec dwm
