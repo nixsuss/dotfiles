@@ -5,6 +5,7 @@ text/plain=leafpad.desktop
 application/x-shellscript=leafpad.desktop
 image/jpeg=nsxiv.desktop
 image/png=nsxiv.desktop
+application/pdf=org.pwmt.zathura-pdf-mupdf.desktop
 
 [Added Associations]
 text/x-chdr=leafpad.desktop;
@@ -13,3 +14,4 @@ text/plain=leafpad.desktop;
 application/x-shellscript=leafpad.desktop;
 image/jpeg=nsxiv.desktop;
 image/png=nsxiv.desktop;
+application/pdf=org.pwmt.zathura-pdf-mupdf.desktop;
