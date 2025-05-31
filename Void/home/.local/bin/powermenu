@@ -3,8 +3,8 @@
 chosen=$(printf "Power Off\nReboot\nLock\nSuspend" | rofi -dmenu -i -theme-str '@import "power.rasi"')
 
 case "$chosen" in
-	"Power Off") sudo shutdown -P now ;;
-	"Reboot") sudo reboot ;;
+	"Power Off") loginctl poweroff ;;
+	"Reboot") loginctl reboot ;;
 	"Lock") slock ;;
 	"Suspend") loginctl suspend ;;
 	*) exit 1 ;;

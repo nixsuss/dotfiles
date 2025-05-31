@@ -13,6 +13,7 @@ echo "FONT=ter-d28b" | sudo tee -a /etc/vconsole.conf
 sudo sed -i 's/^MODULES=.*/MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)/' /etc/mkinitcpio.conf
 echo "blacklist nouveau
 options nouveau modeset=0" | sudo tee /etc/modprobe.d/nouveau_blacklist.conf
+echo "blacklist i2c_nvidia_gpu" | sudo tee /etc/modprobe.d/nvidia_blacklist_i2c.conf
 sudo mkinitcpio -P
 echo "set number" | sudo tee -a /etc/vimrc
 echo "Defaults        pwfeedback" | sudo tee -a /etc/sudoers

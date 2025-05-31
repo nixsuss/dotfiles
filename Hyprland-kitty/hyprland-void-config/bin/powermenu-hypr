@@ -6,9 +6,9 @@ selected=$(echo -e $entries|wofi --width 450 --height 150 --dmenu --cache-file /
 
 case $selected in
   shutdown)
-    exec sudo shutdown -P now;;
+    exec loginctl poweroff ;;
    reboot)
-    exec sudo reboot;;
+    exec loginctl reboot ;;
  suspend)
     exec loginctl suspend;;
   lock)
