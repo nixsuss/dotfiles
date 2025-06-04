@@ -69,6 +69,6 @@ alias ahmed="fastfetch"
 alias wttr="curl 'https://wttr.in/Port_Said?0' --silent --max-time 3"
 
 # System Info on Startup
-# neofetch --ascii_distro void_small
+# fastfetch -l small
 # curl 'https://wttr.in/Port_Said?0' --silent --max-time 3
 
