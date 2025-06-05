@@ -34,7 +34,7 @@ window#waybar.hidden {
 
 #workspaces button {
     background-color: transparent;
-    color: @colro2;
+    color: @color7;
     padding: 0px 2px;
     border-radius: 20px;
     margin-left: 0px;
