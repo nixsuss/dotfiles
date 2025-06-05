@@ -1,4 +1,5 @@
 [Default Applications]
+inode/directory=pcmanfm.desktop
 text/x-chdr=leafpad.desktop
 text/x-csrc=leafpad.desktop
 text/plain=leafpad.desktop
