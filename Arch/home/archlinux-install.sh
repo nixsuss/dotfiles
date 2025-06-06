@@ -14,7 +14,8 @@ echo "blacklist nouveau
 options nouveau modeset=0" | sudo tee /etc/modprobe.d/nouveau_blacklist.conf
 echo "blacklist i2c_nvidia_gpu" | sudo tee /etc/modprobe.d/nvidia_blacklist_i2c.conf
 sudo mkinitcpio -P
-echo "set number" | sudo tee -a /etc/vimrc
+echo "set number
+set relativenumber" | sudo tee -a /etc/vimrc
 echo "Defaults        pwfeedback" | sudo tee -a /etc/sudoers
 sudo systemctl enable fstrim.timer
 sudo systemctl enable ufw 
