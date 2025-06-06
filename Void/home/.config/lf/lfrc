@@ -49,10 +49,14 @@ cmd mkfile ${{
 cmd unarchive ${{
   case "$f" in
       *.zip) unzip "$f" ;;
+      *.7z) 7z x "$f" ;;
       *.tar.gz) tar -xzvf "$f" ;;
       *.tar.bz2) tar -xjvf "$f" ;;
+      *.tar.xz) tar -xJvf "$f" ;;
+      *.tar.lzma) tar --lzma -xvf "$f" ;;
+      *.tar.zstd) tar --zstd -xvf "$f" ;;
       *.tar) tar -xvf "$f" ;;
-      *) echo "Unsupported format" ;;
+      *.rar) unrar x "$f" ;;
   esac
 }}
 
@@ -75,6 +79,10 @@ cmd restore_trash ${{
   trash-restore
 }}
 
+cmd empty_trash ${{
+  trash-empty
+}}
+
 # Bindings
 map d
 map m
@@ -85,6 +93,7 @@ map au unarchive
 map . set hidden!
 map dd trash
 map dr restore_trash
+map dt empty_trash
 map p paste
 map x cut
 map y copy
