@@ -5,7 +5,7 @@ show=drun
 prompt=Apps
 normal_window=true
 layer=overlay
-term=foot
+term=kitty
 columns=2
 
 ## Geometry
