@@ -29,7 +29,7 @@ export EDITOR="vim"
 export VISUAL="vim"
 
 # Theme and Appearance
-[[ -f ~/.cache/wal/sequences ]] && cat ~/.cache/wal/sequences
+#[[ -f ~/.cache/wal/sequences ]] && cat ~/.cache/wal/sequences
 
 # Plugins
 source ~/.myzshthemes/duellj.zsh-theme
