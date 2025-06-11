@@ -180,6 +180,7 @@ command! mkcd :mkdir %a | cd %a
 command! vgrep vim "+grep %a"
 command! reload :write | restart full
 command! extract !extract-files %f
+command! extractd !extract-to-folder %f
 
 " ------------------------------------------------------------------------------
 " File types association
@@ -479,6 +480,7 @@ filextype */
 
 " Extract files
 nnoremap xx :extract<CR>
+nnoremap xd :extractd<CR>
 
 " Start shell in current directory
 nnoremap s :shell<cr>

@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Simple extractor - creates subfolder for each archive
+
+for file in "$@"; do
+    # Remove file extension to create folder name
+    foldername="${file%.*}"
+    
+    echo "Extracting $file to $foldername/"
+    mkdir -p "$foldername"
+    
+    case "$file" in
+        *.zip) unzip "$file" -d "$foldername" ;;
+        *.tar*) tar -xf "$file" -C "$foldername" ;;
+        *.rar) unrar x "$file" "$foldername/" ;;
+        *.7z) 7z x "$file" -o"$foldername" ;;
+        *.xz) xz -dk "$file" && mv "${file%.xz}" "$foldername/" ;;
+        *.zst) zstd -d -k "$file" && mv "${file%.zst}" "$foldername/" ;;
+        *.gz) gunzip -k "$file" && mv "${file%.gz}" "$foldername/" ;;
+        *.bz2) bunzip2 -k "$file" && mv "${file%.bz2}" "$foldername/" ;;
+        *) echo "Skipping $file - unknown format" ;;
+    esac
+done
+echo "Done."

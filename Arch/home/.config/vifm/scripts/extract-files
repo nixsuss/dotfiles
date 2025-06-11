@@ -1,25 +1,21 @@
-#!/bin/sh
+#!/bin/bash
 
-FILE="$1"
-DIR="${2:-.}"
-
-if [ ! -f "$FILE" ]; then
-  echo "Error: File '$FILE' not found!"
-  exit 1
-fi
-
-case "$FILE" in
-  *.zip) unzip "$FILE" -d "$DIR" ;;
-  *.tar.gz) tar -xvzf "$FILE" -C "$DIR" ;;
-  *.tar.bz2) tar -xvjf "$FILE" -C "$DIR" ;;
-  *.tar.xz) tar -xvJf "$FILE" -C "$DIR" ;;
-  *.tar.zst) tar --zstd -xvf "$FILE" -C "$DIR" ;;
-  *.tar) tar -xvf "$FILE" -C "$DIR" ;;
-  *.rar) unrar x "$FILE" "$DIR" ;;
-  *.7z) 7z x "$FILE" -o"$DIR" ;;
-  *.xz) xz -dk "$FILE" ;;
-  *.zst) zstd -d -k "$FILE" ;;
-  *.gz) gunzip -k "$FILE" ;;
-  *.bz2) bunzip2 -k "$FILE" ;;
-  *) echo "Unsupported file type: $FILE" ; exit 2 ;;
-esac
+for file in "$@"; do
+    echo "Extracting $file..."
+    case "$file" in
+        *.zip) unzip "$file" ;;
+        *.tar.gz|*.tgz) tar -xzf "$file" ;;
+        *.tar.bz2|*.tbz2) tar -xjf "$file" ;;
+        *.tar.xz|*.txz) tar -xJf "$file" ;;
+        *.tar.zst) tar --zstd -xf "$file" ;;
+        *.tar) tar -xf "$file" ;;
+        *.rar) unrar x "$file" ;;
+        *.7z) 7z x "$file" ;;
+        *.xz) xz -d "$file" ;;
+        *.zst) zstd -d "$file" ;;
+        *.gz) gunzip "$file" ;;
+        *.bz2) bunzip2 "$file" ;;
+        *) echo "Skipping $file - unknown format" ;;
+    esac
+done
+echo "Done."
