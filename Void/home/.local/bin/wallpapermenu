@@ -11,7 +11,7 @@ if [ -n "$CHOICE" ]; then
 		wal -i "$CHOICE"
 		ln -sfv ~/.cache/wal/colors.Xresources ~/.Xresources
 		ln -sfv ~/.cache/wal/dunstrc ~/.config/dunst/
-		ln -sfv ~/.cache/wal/pywal.ron ~/.config/rmpc/themes
+		ln -sfv ~/.cache/wal/pywal.ron ~/.config/rmpc/themes/
 		pkill dunst; setsid -f dunst
 		cat ~/.Xresources ~/.cache/wal/xrdb_extra | xrdb -merge
 		sleep 0.2

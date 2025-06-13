@@ -30,6 +30,9 @@
     "separate-outputs": false
    },
     "mpd": {
+        "on-click": "kitty rmpc",
+	"on-scroll-up": "mpc volume +1",
+	"on-scroll-down": "mpc volume -1",
         "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {title} {volume}% 󰝚",
         "format-disconnected": "Disconnected 󰝚",
         "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped 󰝚",
@@ -120,7 +123,7 @@
         "on-click": "pavucontrol"
     		   },
     "hyprland/language": {
-    "format": "{short} {variant} 󰘳",
+    "format": "{short} {variant}󰘳",
     "on-click": "hyprctl switchxkblayout sino-wealth-usb-keyboard-1 next",
     			 },
     "bluetooth": {
