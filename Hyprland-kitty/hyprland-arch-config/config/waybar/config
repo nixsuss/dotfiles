@@ -30,12 +30,13 @@
     "separate-outputs": false
    },
     "mpd": {
+    "max-length": 30,
         "on-click": "kitty rmpc",
 	"on-scroll-up": "mpc volume +1",
 	"on-scroll-down": "mpc volume -1",
-        "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {title} {volume}% 󰝚",
-        "format-disconnected": "Disconnected 󰝚",
-        "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped 󰝚",
+
+        "format-disconnected": "󰝚 Disconnected",
+	"format": "󰝚 {stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{title}",
         "unknown-tag": "N/A",
         "interval": 2,
         "consume-icons": {
@@ -55,7 +56,7 @@
             "paused": "",
             "playing": ""
         },
-        "tooltip-format": "MPD (connected)",
+        "tooltip-format": "MPD (connected) {volume}%",
         "tooltip-format-disconnected": "MPD (disconnected)"
     },
     "idle_inhibitor": {
