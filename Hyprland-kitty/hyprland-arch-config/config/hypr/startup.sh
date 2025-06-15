@@ -9,5 +9,5 @@ mako &
 hypridle &
 #mpd &
 sleep 2
-#mpDris2 &
+#mpd-mpris &
 waybar &
