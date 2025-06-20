@@ -36,7 +36,7 @@
 	"on-scroll-down": "mpc volume -1",
 
         "format-disconnected": "󰝚 Disconnected",
-	"format": "󰝚 {stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{title}",
+	"format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}󰝚 {title}",
         "unknown-tag": "N/A",
         "interval": 2,
         "consume-icons": {
