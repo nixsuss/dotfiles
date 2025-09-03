@@ -1,0 +1,151 @@
+{
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+    "height": 30, // Waybar height (to be removed for auto height)
+    "margin": "2 6 8 6",
+    // "width": 1280, // Waybar width
+    // Choose the order of the modules
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
+//    "modules-center": ["battery"],
+    "modules-right": ["mpd", "tray", "hyprland/language", "memory", "cpu", "pulseaudio", "bluetooth", "clock"],
+    // Modules configuration
+    "hyprland/workspaces": {
+    //"format": "{icon}",
+    "on-click": "activate",
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1",
+    //"format-icons": {
+    //"1": "󰇧",
+    //"2": "",
+    //"3": "",
+    //"4": "",
+    //"5": "",
+    //"6": "",
+    //"7": ""
+  //},
+  //"sort-by-number": true
+},
+    "hyprland/window": {
+    "format": "  {}",
+    "separate-outputs": false
+   },
+    "mpd": {
+    "max-length": 30,
+        "on-click": "kitty rmpc",
+	"on-scroll-up": "mpc volume +1",
+	"on-scroll-down": "mpc volume -1",
+
+        "format-disconnected": "󰝚 Disconnected",
+	"format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}󰝚 {title}",
+        "unknown-tag": "N/A",
+        "interval": 2,
+        "consume-icons": {
+            "on": " "
+        },
+        "random-icons": {
+            "off": "<span color=\"#f53c3c\"></span> ",
+            "on": " "
+        },
+        "repeat-icons": {
+            "on": " "
+        },
+        "single-icons": {
+            "on": " 1 "
+        },
+        "state-icons": {
+            "paused": "",
+            "playing": ""
+        },
+        "tooltip-format": "MPD (connected) {volume}%",
+        "tooltip-format-disconnected": "MPD (disconnected)"
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
+    },
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+    },
+    "clock": {
+        "timezone": "Africa/Cairo",
+        "locale": "en_US.UTF-8",
+        "format": "{:%I:%M:%p} ",
+        "tooltip-format": "  <big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%d-%m-%Y}  "
+    },
+    "cpu": {
+        "format": "{usage}%  ",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "{}%  "
+    },
+    "battery": {
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "{essid} ",
+        "format-ethernet": "{ifname} ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP)  ", 
+        "format-disconnected": "⚠",
+                },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{volume}% {icon}  {format_source}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": "󰝟 {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        		},
+        "on-click": "pavucontrol"
+    		   },
+    "hyprland/language": {
+    "format": "{short} {variant}󰘳",
+    "on-click": "hyprctl switchxkblayout sino-wealth-usb-keyboard-1 next",
+    			 },
+    "bluetooth": {
+	// "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
+	"format": " {status}",
+	"format-disabled": "", // an empty format will hide the module
+	"format-connected": " {device_alias} connected",
+	"format-connected-battery": " {device_alias} {device_battery_percentage}%",
+        "format-on": " ON",
+        "format-off": " OFF",
+	"tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+	"tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+        "on-click": "blueman-manager"  // Open Bluetooth manager (optional)
+		 },
+    "disk": {
+	"interval": 30,
+	"format": "{free} 󰋊",
+        "format-alt": "{percentage_free}% free on 󰋊"
+	    }
+
+}
+
