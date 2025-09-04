@@ -1,0 +1,23 @@
+#!/bin/bash
+
+function get_brightness {
+    printf "%.0f" "$(brillo -G)"
+}
+
+function send_notification {
+    brightness=$(get_brightness)
+    bar=$(seq -s "─" $(($brightness / 2)) | sed 's/[0-9]//g')
+    dunstify -t 8000 -r 2594 -u normal "Brightness: ${brightness}%" "$bar"
+}
+
+case $1 in
+    up)
+        brillo -A 5 -q
+        send_notification
+        ;;
+    down)
+        brillo -U 5 -q
+        send_notification
+        ;;
+esac
+

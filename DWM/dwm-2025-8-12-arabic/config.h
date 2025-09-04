@@ -4,6 +4,9 @@
 static const char *upvol[] = { "volume", "up", NULL };
 static const char *downvol[] = { "volume", "down", NULL };
 static const char *mute[] = { "volume", "mute", NULL };
+static const char *mutemic[] = { "amixer", "set", "Capture", "toggle", NULL };
+static const char *upbright[] = { "brightness", "up", NULL };
+static const char *downbright[] = { "brightness", "down", NULL };
 // change the scrot's path to save screenshots to your specific path /home/$USER/what/ever/%Y-%m-%d-%T-screenshot.png
 static const char *screenshot[] = { "scrot","/home/ahmed/Pictures/screenshots/%Y-%m-%d-%T-screenshot.png", NULL };
 static const char *slock[] = { "slock", NULL };
@@ -138,9 +141,9 @@ static const char *termcmd[]  = { "kitty", NULL };
 #include "movestack.c"
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_F11,    spawn,          {.v = downvol } },
-	{ MODKEY,                       XK_F9,     spawn, 	   {.v = mute } },
-	{ MODKEY,                       XK_F12,    spawn, 	   {.v = upvol   } },
+//	{ MODKEY,                       XK_F11,    spawn,          {.v = downvol } },
+//	{ MODKEY,                       XK_F9,     spawn, 	   {.v = mute } },
+//	{ MODKEY,                       XK_F12,    spawn, 	   {.v = upvol   } },
         { 0,              XF86XK_AudioRaiseVolume, spawn,          {.v = upvol } },
         { 0,              XF86XK_AudioLowerVolume, spawn,          {.v = downvol } },
         { 0,              XF86XK_AudioMute,          spawn,          {.v = mute } },	
@@ -148,6 +151,9 @@ static const Key keys[] = {
         { 0,              XF86XK_AudioNext,        spawn,          {.v = nextplay } },	
         { 0,              XF86XK_AudioPrev,        spawn,          {.v = prevplay } },	
         { 0,              XF86XK_AudioStop,        spawn,          {.v = stopplay } },	
+        { 0,              XF86XK_MonBrightnessUp,  spawn,          {.v = upbright } },	
+        { 0,              XF86XK_MonBrightnessDown, spawn,          {.v = downbright } },	
+        { 0,              XF86XK_AudioMicMute,     spawn,          {.v = mutemic } },	
 	{ MODKEY,                       XK_Print,  spawn, 	   {.v = screenshot } },
 	{ MODKEY,                       XK_m,      spawn, 	   {.v = ncmpcpp } },
 	{ MODKEY,                       XK_r,      spawn, 	   {.v = fm } },
