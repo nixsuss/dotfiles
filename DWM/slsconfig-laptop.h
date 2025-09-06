@@ -81,7 +81,7 @@ static const struct arg args[] = {
 //	{ run_command, "^c#0082FC^ %s  ", "bluetoothsls" },
 	{ wifi_essid, "^c#FFFFFF^ %s ", "wlp4s0" },
 	{ wifi_perc, "^c#FFFFFF^%s%%  ", "wlp4s0" },
-	{ battery_perc, "^c#00FF00^ %s%% ", "BAT1" },
+	{ battery_perc, "^c#00FF00^ %s%%/", "BAT1" },
 	{ battery_perc, "^c#00FF00^%s%%  ", "BAT0" },
 	{ datetime, "^c#89b4fa^ %s ",           "%a %b %d" },
 	{ datetime, "^c#89b4fa^ %s",           "%I:%M:%P" },
