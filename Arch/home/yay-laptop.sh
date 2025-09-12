@@ -1,6 +1,6 @@
 #!/bin/bash
 yay -Syy --noconfirm
-yay -S auto-cpufreq brillo networkmanager-dmenu nm-connection-editor
+yay -S auto-cpufreq brillo networkmanager-dmenu nm-connection-editor batify
 sudo usermod -aG video $USER
 sudo systemctl enable --now auto-cpufreq
 sudo chmod 777 /sys/class/backlight/intel_backlight/brightness
@@ -9,3 +9,5 @@ Identifier "touchpad catchall"
 Driver "libinput"
 Option "Tapping" "on"
 EndSection' | sudo tee -a /etc/X11/xorg.conf.d/30-touchpad.conf
+sudo mv 99-batify.rules /etc/udev/rules.d/99-batify.rules
+sudo udevadm control --reload-rules
