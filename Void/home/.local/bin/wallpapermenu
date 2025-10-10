@@ -14,8 +14,7 @@ if [ -n "$CHOICE" ]; then
 		ln -sfv ~/.cache/wal/pywal.ron ~/.config/rmpc/themes/
 		pkill dunst; setsid -f dunst
 		cat ~/.Xresources ~/.cache/wal/xrdb_extra | xrdb -merge
-		sleep 0.2
-		xdotool key shift+super+F5
+		xdotool key control+super+r
 		dunstify -u normal "Wallpaper changed"
 	else
 
