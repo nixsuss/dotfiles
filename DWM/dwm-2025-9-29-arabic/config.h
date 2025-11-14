@@ -74,6 +74,7 @@ static const Rule rules[] = {
 	{ "Image Lounge",     NULL,     NULL,           0,         1, -1 },
 	{ "Gthumb",     NULL,     NULL,           0,         1,       -1 },
 	{ "pavucontrol",     NULL,     NULL,           0,         1,  -1 },
+	{ "Mousepad",     NULL,     NULL,           0,         1,  -1 },
 	{ "Galculator",     NULL,     NULL,           0,         1,    -1 },
 	{ "Xarchiver",     NULL,     NULL,           0,         1,    -1 },
 	{ "Engrampa",     NULL,     NULL,           0,         1,    -1 },
