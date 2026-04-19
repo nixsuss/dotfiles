@@ -1,0 +1,5 @@
+sudo zypper in ucode-intel
+sudo zypper in openSUSE-repos-Tumbleweed-NVIDIA
+sudo zypper in --details nvidia-open-driver-G07-signed-kmp-meta nvidia-userspace-meta-G07 nvidia-settings zsh opi git symbols-only-nerd-fonts eza dust bottom strawberry curl telegram-desktop fastfetch mpv duf bat fzf google-noto-sans-cjk-fonts vim mpv fetchmsttfonts starship google-droid-fonts systemd-zram-service
+sudo echo "set number
+set relativenumber" | sudo tee -a /etc/vimrc

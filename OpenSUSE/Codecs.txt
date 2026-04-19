@@ -1,0 +1,2 @@
+sudo zypper in opi
+opi codecs

@@ -1,0 +1,15 @@
+#as root
+#Change /etc/pkg/Freebsd.conf from quarterly to latest and do update -f
+pkg install nvidia-driver xorg nvidia-settings sudo linux-nvidia-libs
+sysrc kld_list+=nvidia-modeset
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+#as user
+sudo pkg install xfce xfce4-goodies lightdm lightdm-gtk-greeter networkmgr xarchive xarchiver xfce4-pulseaudio-plugin fusefs-ntfs fuse py311-fastest_pkg Kvantum dust eza fastfetch firefox fzf hack-font libc6-shim libreoffice mpv nerd-fonts-overpass noto qbittorrent qt5ct qt6ct rsync slick-greeter starship strawberry telegram-desktop vim-gtk3 vlc webfonts zsh zsh-autosuggestions zsh-completions zsh-syntax-highlighting
+sudo sysrc kld_list+=fusefs
+sudo sysrc dbus_enable=YES
+sudo sysrc lightdm_enable=YES
+echo "proc    /proc    procfs    rw    0    0" | sudo tee -a /etc/fstab
+sudo mkdir /usr/local/etc/vim/vimrc
+echo "set number
+set relativenumber" | sudo tee -a /usr/local/etc/vim/vimrc
+---------------------------------------------------------------------------------------------------------------------------------------------------------------

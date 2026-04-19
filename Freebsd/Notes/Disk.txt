@@ -1,0 +1,21 @@
+- to list disks use "geom disk list"
+- to list disks and partitions use "gpart show"
+- to list disks that have been only formated use "gpart list"
+- to delete partitions use "gpart delete -i (partition number) (disk name)"
+- to delete partition table not file system information use "gpart destroy -F (disk name)" to remove all file system information use "dd if=/dev/zero of=/dev/(diskname) count=(100or1) bs=1M"
+- to delete partition information only use "dd if=/dev/zero of=/dev/(partition) count=(100or1) bs=1M"
+- to list mounted partition use "mount"
+- to create mbr partition :
+	1-"gpart create -s mbr (disk name)"
+	2-"gpart add -t freebsd (disk name)"
+	3-"gpart create -s bsd (virtual disk name)"
+	4-"gpart add -t freebsd-ufs -s (size in M or G) (virtual disk name)"
+	5-"newfs (virtual partition name)"
+- to create gpt partition:
+	1-"gpart create -s gpt (disk name)"
+	2-"gpart add -t freebsd-ufs -s (size in M or G) (disk name)"
+	3-"newfs (partition name)"
+- to remove gpart show duplicate add  to /boot/loader.conf :
+kern.geom.label.disk_ident.enable="0"
+kern.geom.label.ufsid.enable="0"
+- to burn a disk use "dd if=(image/iso/usb) of=/dev/(diskname) bs=1m conv=sync"

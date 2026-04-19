@@ -1,0 +1,15 @@
+#as root
+#Change /etc/pkg/Freebsd.conf from quarterly to latest and do update -f
+pkg install nvidia-driver xorg nvidia-settings sudo cpu-microcode-intel
+sysrc kld_list+=nvidia-modeset
+
+#add this to /boot/loader.conf 
+cpu_microcode_load="YES"
+cpu_microcode_name="/boot/firmware/intel_ucode.bin"
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+#as user
+sudo pkg install xfce xfce4-goodies lightdm lightdm-gtk-greeter networkmgr xarchive xfce4-pulseaudio-plugin fusefs-ntfs fuse py311-fastest_pkg
+sudo sysrc kld_list+=fusefs
+sudo sysrc dbus_enable=YES
+sudo sysrc lightdm_enable=YES
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
